@@ -2,8 +2,8 @@
 
 ## Integrantes
 - Beltrán García Julio Edgar 
-- Ochoa Tlatenchi Abigail 
-- Huerta Marañon Erick Andres 
+- Huerta Marañon Erick Andres
+- Ochoa Tlatenchi Abigail  
 - Pacheco Espinosa Lissete 
 - Pérez Domínguez Maximiliano 
 
