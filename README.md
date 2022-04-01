@@ -7,6 +7,16 @@ La idea consiste en crear una aplicación que basado en aplicaciones de servicio
 En la aplicación se podrá encontrar información de la persona a contratar para realizar el servicio que se solicite, las personas también podrán calificar y comentar la calidad de servicio que recibieron por parte de la persona que brindo el servicio.
 
 ### Código 
+##### Login
+##### Registro
+##### Recuperación de contraseñas
+##### Home
+##### Selección de servicios 
+##### Perfil de prestador de servicios
+##### Solicitar servicio
+##### Perfil de usuario
+##### Dejar reseña
+
 ### Vista previa 
 ##### Login
 ##### Registro
