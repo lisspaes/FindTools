@@ -44,7 +44,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
           ),
           Container(
           height: 250,
-            child: Expanded(
+
               child: Card(
                 child: Column(
 
@@ -171,10 +171,10 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
               ),
             ),
-          ),
+
           Container(
             height: 250,
-            child: Expanded(
+
               child: Card(
                 child: Column(
 
@@ -273,7 +273,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
               ),
             ),
-          ),
+
         ],
       ),
     );
