@@ -19,16 +19,23 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ### Prototipo 
 ##### Login
+![](https://github.com/lisspaes/FindTools/tree/main/assets/images/prototipo)
 ##### Registro
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png)
 ##### Recuperación de contraseñas
+![]()
 ##### Home
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
 ##### Selección de servicios 
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
 ##### Perfil de prestador de servicios
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/prestador.png)
 ##### Solicitar servicio
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png)
 ##### Perfil de usuario
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png)
 ##### Dejar reseña
-
+![]()
 ### Vista previa
 
 
