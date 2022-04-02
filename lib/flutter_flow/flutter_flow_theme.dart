@@ -6,7 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 const kThemeModeKey = '__theme_mode__';
-SharedPreferences _prefs;
+SharedPreferences? _prefs;
 
 abstract class FlutterFlowTheme {
   static Future initialize() async =>
@@ -29,17 +29,17 @@ abstract class FlutterFlowTheme {
           ? DarkModeTheme()
           : LightModeTheme();
 
-  Color primaryColor;
-  Color secondaryColor;
-  Color tertiaryColor;
-  Color alternate;
-  Color primaryBackground;
-  Color secondaryBackground;
-  Color primaryText;
-  Color secondaryText;
+  Color? primaryColor;
+  Color? secondaryColor;
+  Color? tertiaryColor;
+  Color? alternate;
+  Color? primaryBackground;
+  Color? secondaryBackground;
+  Color? primaryText;
+  Color? secondaryText;
 
-  Color primaryBtnText;
-  Color lineColor;
+  Color? primaryBtnText;
+  Color? lineColor;
 
   TextStyle get title1 => GoogleFonts.getFont(
         'Poppins',
@@ -86,47 +86,75 @@ abstract class FlutterFlowTheme {
 }
 
 class LightModeTheme extends FlutterFlowTheme {
-  Color primaryColor = const Color(0xFF4B39EF);
-  Color secondaryColor = const Color(0xFF39D2C0);
-  Color tertiaryColor = const Color(0xFFEE8B60);
-  Color alternate = const Color(0xFFFF5963);
-  Color primaryBackground = const Color(0xFFF1F4F8);
-  Color secondaryBackground = const Color(0xFFFFFFFF);
-  Color primaryText = const Color(0xFF101213);
-  Color secondaryText = const Color(0xFF57636C);
+  //Color primaryColor = const Color(0xFF4B39EF);
+  // Color secondaryColor = const Color(0xFF39D2C0);
+  // Color tertiaryColor = const Color(0xFFEE8B60);
+  // Color alternate = const Color(0xFFFF5963);
+  // Color primaryBackground = const Color(0xFFF1F4F8);
+  // Color secondaryBackground = const Color(0xFFFFFFFF);
+  // Color primaryText = const Color(0xFF101213);
+  // Color secondaryText = const Color(0xFF57636C);
+  //
+  // Color primaryBtnText = Color(0xFFFFFFFF);
+  // Color lineColor = Color(0xFFE0E3E7);
 
-  Color primaryBtnText = Color(0xFFFFFFFF);
-  Color lineColor = Color(0xFFE0E3E7);
+  LightModeTheme(){
+    primaryColor = const Color(0xFF4B39EF);
+    secondaryColor = const Color(0xFF39D2C0);
+    tertiaryColor = const Color(0xFFEE8B60);
+    alternate = const Color(0xFFFF5963);
+    primaryBackground = const Color(0xFFF1F4F8);
+    secondaryBackground = const Color(0xFFFFFFFF);
+    primaryText = const Color(0xFF101213);
+    secondaryText = const Color(0xFF57636C);
+
+    primaryBtnText = Color(0xFFFFFFFF);
+    lineColor = Color(0xFFE0E3E7);
+  }
 }
 
 class DarkModeTheme extends FlutterFlowTheme {
-  Color primaryColor = const Color(0xFF4B39EF);
-  Color secondaryColor = const Color(0xFF39D2C0);
-  Color tertiaryColor = const Color(0xFFEE8B60);
-  Color alternate = const Color(0xFFFF5963);
-  Color primaryBackground = const Color(0xFF1A1F24);
-  Color secondaryBackground = const Color(0xFF101213);
-  Color primaryText = const Color(0xFFFFFFFF);
-  Color secondaryText = const Color(0xFF95A1AC);
+  // Color primaryColor = const Color(0xFF4B39EF);
+  // Color secondaryColor = const Color(0xFF39D2C0);
+  // Color tertiaryColor = const Color(0xFFEE8B60);
+  // Color alternate = const Color(0xFFFF5963);
+  // Color primaryBackground = const Color(0xFF1A1F24);
+  // Color secondaryBackground = const Color(0xFF101213);
+  // Color primaryText = const Color(0xFFFFFFFF);
+  // Color secondaryText = const Color(0xFF95A1AC);
+  //
+  // Color primaryBtnText = Color(0xFFFFFFFF);
+  // Color lineColor = Color(0xFF22282F);
 
-  Color primaryBtnText = Color(0xFFFFFFFF);
-  Color lineColor = Color(0xFF22282F);
+  DarkModeTheme(){
+    primaryColor = const Color(0xFF4B39EF);
+    secondaryColor = const Color(0xFF39D2C0);
+    tertiaryColor = const Color(0xFFEE8B60);
+    alternate = const Color(0xFFFF5963);
+    primaryBackground = const Color(0xFF1A1F24);
+    secondaryBackground = const Color(0xFF101213);
+    primaryText = const Color(0xFFFFFFFF);
+    secondaryText = const Color(0xFF95A1AC);
+
+    primaryBtnText = Color(0xFFFFFFFF);
+    lineColor = Color(0xFF22282F);
+  }
 }
 
 extension TextStyleHelper on TextStyle {
   TextStyle override({
-    String fontFamily,
-    Color color,
-    double fontSize,
-    FontWeight fontWeight,
-    FontStyle fontStyle,
-    bool useGoogleFonts = true,
-    TextDecoration decoration,
-    double lineHeight,
+    String? fontFamily,
+    Color? color,
+    double? fontSize,
+    FontWeight? fontWeight,
+    FontStyle? fontStyle,
+     bool useGoogleFonts = false,
+    TextDecoration? decoration,
+    double? lineHeight,
   }) =>
       useGoogleFonts
           ? GoogleFonts.getFont(
-              fontFamily,
+              fontFamily!,
               color: color ?? this.color,
               fontSize: fontSize ?? this.fontSize,
               fontWeight: fontWeight ?? this.fontWeight,

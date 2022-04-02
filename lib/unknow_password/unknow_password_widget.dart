@@ -1,11 +1,10 @@
 import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class UnknowPasswordWidget extends StatefulWidget {
-  const UnknowPasswordWidget({Key key}) : super(key: key);
+  const UnknowPasswordWidget({Key? key}) : super(key: key);
 
   @override
   _UnknowPasswordWidgetState createState() => _UnknowPasswordWidgetState();
@@ -193,6 +192,8 @@ class _UnknowPasswordWidgetState extends State<UnknowPasswordWidget> {
                             width: 1,
                           ),
                           borderRadius: 8,
+                          iconColor: Colors.indigo, disabledColor: Colors.white70, splashColor: Colors.indigo,
+                          iconPadding: EdgeInsets.all(1), padding: EdgeInsets.all(1), iconSize: 2, disabledTextColor: Colors.white70,
                         ),
                       ),
                     ),

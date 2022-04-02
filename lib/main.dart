@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:lottie/lottie.dart';
+import 'package:login_app/Crear_cuenta/Crear_cuenta.dart';
+import 'package:login_app/unknow_password/unknow_password_widget.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'home.dart';
 
@@ -113,7 +115,12 @@ class LoginApp extends StatelessWidget{
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           TextButton(
-                            onPressed: (){print('Olvide');},
+                            onPressed: (){
+                              Navigator.push(context,
+                              MaterialPageRoute(builder: (context)=>UnknowPasswordWidget()
+                                ),
+                              );
+                              },
                             child:const Text("Olvide mi Contraseña",
                               style: TextStyle(
                                   color: Colors.black
@@ -121,7 +128,12 @@ class LoginApp extends StatelessWidget{
                             ),
                           ),
                           TextButton(
-                            onPressed:  (){print('Crear');},
+                            onPressed: (){
+                              Navigator.push(context,
+                                MaterialPageRoute(builder: (context)=>HomePageWidget()
+                                ),
+                              );
+                            },
                             child:const Text("Crear una cuenta",
                               style: TextStyle(
                                   color: Colors.black

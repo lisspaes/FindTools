@@ -1,23 +1,22 @@
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 
 class FFButtonOptions {
   const FFButtonOptions({
-    this.textStyle,
-    this.elevation,
-    this.height,
-    this.width,
-    this.padding,
-    this.color,
-    this.disabledColor,
-    this.disabledTextColor,
-    this.splashColor,
-    this.iconSize,
-    this.iconColor,
-    this.iconPadding,
-    this.borderRadius,
-    this.borderSide,
+    required this.textStyle,
+    required this.elevation,
+    required this.height,
+    required this.width,
+    required this.padding,
+    required this.color,
+    required this.disabledColor,
+    required this.disabledTextColor,
+    required this.splashColor,
+    required this.iconSize,
+    required this.iconColor,
+    required this.iconPadding,
+    required this.borderRadius,
+    required this.borderSide,
   });
 
   final TextStyle textStyle;
@@ -38,18 +37,14 @@ class FFButtonOptions {
 
 class FFButtonWidget extends StatefulWidget {
   const FFButtonWidget({
-    Key key,
-    @required this.text,
-    @required this.onPressed,
-    this.icon,
-    this.iconData,
-    @required this.options,
+    Key? key,
+    required this.text,
+    required this.onPressed,
+    required this.options,
     this.showLoadingIndicator = true,
   }) : super(key: key);
 
   final String text;
-  final Widget icon;
-  final IconData iconData;
   final Function() onPressed;
   final FFButtonOptions options;
   final bool showLoadingIndicator;
@@ -97,39 +92,39 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
           }
         : () => widget.onPressed();
 
-    if (widget.icon != null || widget.iconData != null) {
-      textWidget = Flexible(child: textWidget);
-      return Container(
-        height: widget.options.height,
-        width: widget.options.width,
-        child: RaisedButton.icon(
-          icon: Padding(
-            padding: widget.options.iconPadding ?? EdgeInsets.zero,
-            child: widget.icon ??
-                FaIcon(
-                  widget.iconData,
-                  size: widget.options.iconSize,
-                  color: widget.options.iconColor ??
-                      widget.options.textStyle.color,
-                ),
-          ),
-          label: textWidget,
-          onPressed: onPressed,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(widget.options.borderRadius),
-            side: widget.options.borderSide ?? BorderSide.none,
-          ),
-          color: widget.options.color,
-          colorBrightness:
-              ThemeData.estimateBrightnessForColor(widget.options.color),
-          textColor: widget.options.textStyle.color,
-          disabledColor: widget.options.disabledColor,
-          disabledTextColor: widget.options.disabledTextColor,
-          elevation: widget.options.elevation,
-          splashColor: widget.options.splashColor,
-        ),
-      );
-    }
+    // if (widget.icon != null || widget.iconData != null) {
+    //   textWidget = Flexible(child: textWidget);
+    //   return Container(
+    //     height: widget.options.height,
+    //     width: widget.options.width,
+    //     child: RaisedButton.icon(
+    //       icon: Padding(
+    //         padding: widget.options.iconPadding ?? EdgeInsets.zero,
+    //         child: widget.icon ??
+    //             FaIcon(
+    //               widget.iconData,
+    //               size: widget.options.iconSize,
+    //               color: widget.options.iconColor ??
+    //                   widget.options.textStyle.color,
+    //             ),
+    //       ),
+    //       label: textWidget,
+    //       onPressed: onPressed,
+    //       shape: RoundedRectangleBorder(
+    //         borderRadius: BorderRadius.circular(widget.options.borderRadius),
+    //         side: widget.options.borderSide ?? BorderSide.none,
+    //       ),
+    //       color: widget.options.color,
+    //       colorBrightness:
+    //           ThemeData.estimateBrightnessForColor(widget.options.color),
+    //       textColor: widget.options.textStyle.color,
+    //       disabledColor: widget.options.disabledColor,
+    //       disabledTextColor: widget.options.disabledTextColor,
+    //       elevation: widget.options.elevation,
+    //       splashColor: widget.options.splashColor,
+    //     ),
+    //   );
+    // }
 
     return Container(
       height: widget.options.height,
@@ -138,8 +133,10 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
         onPressed: onPressed,
         shape: RoundedRectangleBorder(
           borderRadius:
-              BorderRadius.circular(widget.options.borderRadius ?? 28),
-          side: widget.options.borderSide ?? BorderSide.none,
+              //BorderRadius.circular(widget.options.borderRadius ?? 28),
+          BorderRadius.circular(28),
+          //side: widget.options.borderSide ?? BorderSide.none,
+          side: BorderSide.none,
         ),
         textColor: widget.options.textStyle.color,
         color: widget.options.color,

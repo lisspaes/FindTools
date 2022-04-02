@@ -1,20 +1,20 @@
 import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 
 class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({Key key}) : super(key: key);
+  const HomePageWidget({Key? key}) : super(key: key);
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
 }
 
 class _HomePageWidgetState extends State<HomePageWidget> {
-  TextEditingController textController1;
-  TextEditingController textController2;
-  TextEditingController textController3;
+
+  late TextEditingController textController1;
+  late TextEditingController textController2;
+  late TextEditingController textController3;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -318,7 +318,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 15),
                           child: Container(
                             width: 270,
-                            height: 100,
+                            height: 120,
                             decoration: BoxDecoration(
                               color: Color(0xFFF6F6F6),
                             ),
@@ -349,7 +349,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                         color: Colors.transparent,
                                         width: 1,
                                       ),
-                                      borderRadius: 12,
+                                      borderRadius: 12, iconColor: Colors.indigo, disabledColor: Colors.white70, splashColor: Colors.indigo,
+                                      iconPadding: EdgeInsets.all(1), elevation: 1, padding: EdgeInsets.all(1), iconSize: 2, disabledTextColor: Colors.white70,
+
                                     ),
                                   ),
                                 ),
@@ -390,7 +392,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Colors.transparent,
                                             width: 1,
                                           ),
-                                          borderRadius: 0,
+                                          borderRadius: 0, iconColor: Colors.indigo, disabledColor: Colors.white70, splashColor: Colors.indigo,
+                                          iconPadding: EdgeInsets.all(1), padding: EdgeInsets.all(1), iconSize: 2, disabledTextColor: Colors.white70,
                                         ),
                                       ),
                                     ],
