@@ -39,8 +39,8 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ### Vista previa
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
-###### Crear una cuentaCrear una cuenta
-###### Olvide mi contraseñaOlvide mi contraseña
+###### Crear una cuenta
+###### Olvide mi contraseña
 ###### Iniciar
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
