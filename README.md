@@ -37,6 +37,21 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ##### Dejar reseña
 ![]()
 ### Vista previa
+#####  Login
+1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
+###### Crear una cuentaCrear una cuenta
+###### Olvide mi contraseñaOlvide mi contraseña
+###### Iniciar
+##### Home
+2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
+###### Menu
+En la parte superior encontramos una barra, en el cual tenemos el menu y se encuentran algunos indicadores:
+- Mi perfil
+-  Buscar servicio
+- Agregar servicio
+- Servicios pendientes
+- Cerrar sesion 
+###### Servicios
 
 
 
