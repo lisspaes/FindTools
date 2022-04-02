@@ -22,6 +22,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ##### Registro
 ##### Recuperación de contraseñas
 ##### Home
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
 ##### Selección de servicios 
 ##### Perfil de prestador de servicios
 ##### Solicitar servicio
