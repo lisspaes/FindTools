@@ -1426,7 +1426,8 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="375"/>
 
 ###### Olvide mi contraseña
-###### Iniciar
+<img src="" width="375"/>
+
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
 ###### Menu
