@@ -8,7 +8,10 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ### Prototipo
 ##### Login
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375" alt="dd"/>
+<p align="center"> <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Login.jpg" width="300" /> </p>
+
+
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Login.png)
 ##### Registro
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png)
 ##### Recuperación de contraseñas
