@@ -8,7 +8,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ### Código y Vista previa
 ##### Login
-Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada home.
+Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
 ```javascript
 //Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
@@ -220,6 +220,170 @@ class LoginApp extends StatelessWidget{
 ##### Recuperación de contraseñas
 ![]()
 ##### Home
+La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
+```
+//Importar librerias y dependecias a ocupar
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_app/screens/servicios.dart';
+
+import '../home.dart';
+//clase  buscarServicio
+class buscarServicio extends StatelessWidget{
+
+  final Accion home;
+
+  buscarServicio ({Key? key, required this.home}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context){
+//widget padding  agrega relleno o espacio vacío alrededor de un widget.
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+// Column permite especificar como se alinearán los widgets: Como card, image que es la foto del usuario y text para la bienvenida del usuario 
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Card(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                const Text(
+                  'Hola @Usuario',
+                  style: TextStyle(fontSize: 25),
+                ),
+                const Image(
+                  image: NetworkImage('https://www.sircuenca.com/images/admin.png'),
+                  height: 100,
+                ),
+              ],
+            ),
+
+          ),
+//Card permite adaptar o colocar dentro de la misma los widget: padding y TextField de la app para poder buscar el servicio.
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(40.0),
+              child: Column(children: [
+                TextField(
+
+                    decoration: new InputDecoration(
+                      prefixIcon: Icon(Icons.search, size: 25),
+                      hintText: 'Buscar servicio',
+
+                    )
+                ),
+// ElevatedButton es un botón de elevación llamado buscar, aumenta cuando es presionado por el usuario y busca el servicio deseado.
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(primary: Colors.indigo),
+                  onPressed: () {
+                    // Navigator.push(context,
+                    //   MaterialPageRoute(builder: (context)=> servicios()),
+                    // );
+                    home.cambiarVista(100);
+                  },
+                  child: Text("Buscar"),
+
+                )
+              ]),
+            ),
+          ),
+ //GridView  crea la cuadricula donse se visualiza los servicios disponibles con un widget : Container, image y text.
+          Expanded(
+            child: GridView.count(
+              primary: false,
+              padding: const EdgeInsets.all(20),
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              crossAxisCount: 2,
+              children: <Widget>[
+                Container(
+                  child: Stack(
+                    children: [
+                      const Image(
+                        image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/fumigador.jpg'),
+                      ),
+                      Center(child: Text("Fumigador",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          backgroundColor: Colors.black,
+
+                        ),
+                      ),
+
+                      ),
+                    ],
+                  ),
+
+                ),
+                Container(
+                  child: Stack(
+                    children: [
+                      const Image(
+                        image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/electricista.jpg'),
+                      ),
+                      Center(child: Text("Electricista",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          backgroundColor: Colors.black,
+
+                        ),
+                      ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Container(
+                  child: Stack(
+                    children: [
+                      const Image(
+                        image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/plomero.jpg'),
+                      ),
+                      Center(child: Text("Plomería",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          backgroundColor: Colors.black,
+
+                        ),
+                      ),
+                      ),
+                    ],
+                  ),
+                  color: Colors.teal[100],
+                ),
+                Container(
+                  child: Stack(
+                    children: [
+                      const Image(
+                        image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/pintor.jpg'),
+                      ),
+                      Center(child: Text("Pintor",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          backgroundColor: Colors.black,
+
+                        ),
+                      ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+
+  }
+}
+```
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
 ##### Selección de servicios 
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
