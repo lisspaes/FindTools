@@ -6,7 +6,27 @@ Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicacion
  
 En la aplicación se podrá encontrar información de la persona a contratar para realizar el servicio que se solicite, las personas también podrán calificar y comentar la calidad de servicio que recibieron por parte de la persona que brindo el servicio.
 
-### Código y Vista previa
+### Vista previa
+##### Login
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg)
+##### Registro
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png)
+##### Recuperación de contraseñas
+![]()
+##### Home
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
+##### Seleccion 
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
+##### Perfil de prestador de servicios
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/prestador.png)
+##### Solicitar servicio
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png)
+##### Perfil de usuario
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png)
+##### Dejar reseña
+![]()
+
+### Código y 
 ##### Login
 Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
 ```javascript
@@ -212,13 +232,6 @@ class LoginApp extends StatelessWidget{
 }
 
 ```
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg)
-
-
-##### Registro
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png)
-##### Recuperación de contraseñas
-![]()
 ##### Home
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
 
@@ -386,9 +399,96 @@ class buscarServicio extends StatelessWidget{
 }
 
 ```
-
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
 ##### Selección de servicios 
+En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio. 
+
+```javascript
+//Importar librerias y dependecias a ocupar
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:login_app/screens/perfilServicios.dart';
+import 'package:login_app/screens/perfiles.dart';
+//clase servicios
+class servicios extends StatefulWidget{
+  @override
+  State<servicios> createState() => _interfazServicios();
+}
+
+class _interfazServicios extends State<servicios> {
+
+  @override
+  Widget build(BuildContext context){
+
+//Container,  permite personalizar el widget hijo como column, text,  expanded de los perfiles del prestador de servicios.
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+
+        children: [
+          Text("Pintor",
+            style: TextStyle(fontSize: 25,
+            ),
+          ),
+          Text("Elige el perfil",
+            style: TextStyle(fontSize: 15,
+            ),
+          ),
+          Expanded(
+//ListView  permite desplazar en forma de eje tranversal de los prestadores de servicio.
+            child: ListView.builder(
+            itemCount: perfilesLista.length,
+            itemBuilder: (context, index) {
+              Perfiles perfiles = perfilesLista[index];
+              return Card(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context)=>perfilServicio(perfiles)));
+                  },
+                  child: ListTile(
+                    title: Row(
+
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(perfiles.nombre),
+                        Text(perfiles.calificacion.toString())
+                      ],
+                    ),
+                    subtitle: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(perfiles.ubicacion, style: TextStyle(fontSize: 12, color: Colors.grey), ),
+                        Text(perfiles.descripcion, style: TextStyle(), maxLines: 3, overflow: TextOverflow.fade,),
+                      ],
+                    ),
+
+                    //leading: Image.network(perfiles.imagenURL),
+                    leading: Container(
+                        height: 64,
+                        width: 64,
+                        alignment: Alignment.bottomLeft,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.rectangle,
+                            image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: NetworkImage(perfiles.imagenURL)
+                            )
+                        )
+                    ),
+
+                  ),
+                ),
+              );
+            }
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+```
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
 ##### Perfil de prestador de servicios
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/prestador.png)
