@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_app/screens/servicios.dart';
+
+import '../home.dart';
 
 class buscarServicio extends StatelessWidget{
+
+  final Accion home;
+
+  buscarServicio ({Key? key, required this.home}) : super(key: key);
+
   @override
   Widget build(BuildContext context){
 
@@ -32,13 +42,18 @@ class buscarServicio extends StatelessWidget{
                 TextField(
 
                     decoration: new InputDecoration(
+                      prefixIcon: Icon(Icons.search, size: 25),
                       hintText: 'Buscar servicio',
+
                     )
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(primary: Colors.indigo),
                   onPressed: () {
-
+                    // Navigator.push(context,
+                    //   MaterialPageRoute(builder: (context)=> servicios()),
+                    // );
+                    home.cambiarVista(100);
                   },
                   child: Text("Buscar"),
 
@@ -68,6 +83,7 @@ class buscarServicio extends StatelessWidget{
 
                         ),
                       ),
+
                       ),
                     ],
                   ),

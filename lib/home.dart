@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:login_app/screens/servicios.dart';
 import 'screens/agregarServicio.dart';
 import 'screens/perfilUsuario.dart';
 import 'screens/serviciosPendientes.dart';
 import 'screens/buscarServicio.dart';
+
+class Accion {
+  cambiarVista(int index){}
+}
 
 class Inicio extends StatefulWidget {
   const Inicio({Key? key}) : super(key: key);
@@ -12,14 +17,16 @@ class Inicio extends StatefulWidget {
 }
 
 
-class _InicioState extends State<Inicio> {
+class _InicioState extends State<Inicio> implements Accion {
 int selectD = 1;
   _getDrawerItemWidget(pos){
     switch(pos){
       case 0: return perfilUsuario();
-      case 1: return buscarServicio();
+      case 1: return buscarServicio(home: this,);
       case 2: return agregarServicios();
       case 3: return serviciosPendientes();
+
+      case 100: return servicios();
     }
   }
 
@@ -108,5 +115,11 @@ int selectD = 1;
       ),
       body: _getDrawerItemWidget(selectD),
     );
+  }
+
+  @override
+  cambiarVista(int index) {
+
+    _onSelectItem(index);
   }
 }
