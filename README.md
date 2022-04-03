@@ -8,7 +8,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ### Prototipo
 ##### Login
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg)
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
 ##### Registro
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png)
 ##### Recuperación de contraseñas
@@ -1417,6 +1417,7 @@ List<Resenas> resenasLista = [
 ### Manual de Usuario
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
 ###### Crear una cuenta
 ###### Olvide mi contraseña
 ###### Iniciar
@@ -1429,7 +1430,7 @@ En la parte superior encontramos una barra, en el cual tenemos el menu y se encu
 - Agregar servicio
 - Servicios pendientes
 - Cerrar sesion 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="375" alt="fff"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="375"/>
 
 ###### Servicios
 
