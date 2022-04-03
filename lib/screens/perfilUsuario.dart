@@ -43,132 +43,133 @@ class _perfilUsuarioState extends State<perfilUsuario> {
           ),
           Container(
           height: 250,
-
-              child: Card(
-                child: Column(
-
-                  children: [
-                    SizedBox(
-                      height: 50,
-                      child: Text("Servicios en proceso",
-                        style: TextStyle( fontSize: 20, color: Colors.black54),
-                        textAlign: TextAlign.justify,
-                      ),
+            child: Card(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 50,
+                    child: Text(
+                      "Servicios en proceso",
+                      style: TextStyle( fontSize: 20, color: Colors.black54),
+                      textAlign: TextAlign.justify,
                     ),
-                    Container(
-                      height: 180,
-                     child:  ListView(
-                       scrollDirection: Axis.horizontal,
-                       children: [
+                  ),
+                  Container(
+                    height: 180,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: [
+                        Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              width: 100,
+                              decoration: BoxDecoration(color: Colors.white70),
+                              child: Column(
+                                children: [
+                                  const Image(
+                                    image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/fumigador.jpg'
+                                    ),
+                                  ),
+                                  TextButton(
+                                      onPressed: (){
+                                        openDialog();
+                                      },
+                                      child: Text("Mostrar status",
+                                        style: TextStyle(
+                                          color: Colors.indigo,
 
-                         Padding(
-                           padding: const EdgeInsets.all(8.0),
-                           child: Container(
-                             width: 100,
-                             decoration: BoxDecoration(color: Colors.white70),
-                             child: Column(
-                               children: [
-                                 const Image(
-                                   image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/fumigador.jpg'),
-                                 ),
-                                 TextButton(onPressed: (){print('Seleccionar');},
-                                     child: Text("Mostrar status",
-                                       style: TextStyle(
-                                         color: Colors.indigo,
+                                          fontSize: 10,
+                                        ),
 
-                                         fontSize: 10,
-                                       ),))
+                                      )
+                                  )
+                                ],
+                              ),
+                            ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 100,
+                            decoration: BoxDecoration(color: Colors.white70),
+                            child: Column(
+                              children: [
+                                const Image(
+                                  image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/pintor.jpg'),
+                                ),
+                                TextButton(onPressed: (){print('Seleccionar');},
+                                    child: Text("Mostrar status",
+                                      style: TextStyle(
+                                        color: Colors.indigo,
 
-
-
-
-                               ],
-                             ),
-                           ),
-                         ),
-                         Padding(
-                           padding: const EdgeInsets.all(8.0),
-                           child: Container(
-                             width: 100,
-                             decoration: BoxDecoration(color: Colors.white70),
-                             child: Column(
-                               children: [
-                                 const Image(
-                                   image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/pintor.jpg'),
-                                 ),
-                                 TextButton(onPressed: (){print('Seleccionar');},
-                                     child: Text("Mostrar status",
-                                       style: TextStyle(
-                                         color: Colors.indigo,
-
-                                         fontSize: 10,
-                                       ),))
-
-
-
-
-                               ],
-                             ),
-                           ),
-                         ),
-                         Padding(
-                           padding: const EdgeInsets.all(8.0),
-                           child: Container(
-                             width: 100,
-                             decoration: BoxDecoration(color: Colors.white70),
-                             child: Column(
-                               children: [
-                                 const Image(
-                                   image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/electricista.jpg'),
-                                 ),
-                                 TextButton(onPressed: (){print('Seleccionar');},
-                                     child: Text("Mostrar status",
-                                       style: TextStyle(
-                                         color: Colors.indigo,
-
-                                         fontSize: 10,
-                                       ),))
+                                        fontSize: 10,
+                                      ),))
 
 
 
 
-                               ],
-                             ),
-                           ),
-                         ),
-                         Padding(
-                           padding: const EdgeInsets.all(8.0),
-                           child: Container(
-                             width: 100,
-                             decoration: BoxDecoration(color: Colors.white70),
-                             child: Column(
-                               children: [
-                                 const Image(
-                                   image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/plomero.jpg'),
-                                 ),
-                                 TextButton(onPressed: (){print('Seleccionar');},
-                                     child: Text("Mostrar status",
-                                       style: TextStyle(
-                                         color: Colors.indigo,
+                              ],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 100,
+                            decoration: BoxDecoration(color: Colors.white70),
+                            child: Column(
+                              children: [
+                                const Image(
+                                  image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/electricista.jpg'),
+                                ),
+                                TextButton(onPressed: (){print('Seleccionar');},
+                                    child: Text("Mostrar status",
+                                      style: TextStyle(
+                                        color: Colors.indigo,
 
-                                         fontSize: 10,
-                                       ),))
-
-
+                                        fontSize: 10,
+                                      ),))
 
 
-                               ],
-                             ),
-                           ),
-                         ),
-                       ],
-                     ),
+
+
+                              ],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Container(
+                            width: 100,
+                            decoration: BoxDecoration(color: Colors.white70),
+                            child: Column(
+                              children: [
+                                const Image(
+                                  image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/plomero.jpg'),
+                                ),
+                                TextButton(onPressed: (){print('Seleccionar');},
+                                    child: Text("Mostrar status",
+                                      style: TextStyle(
+                                        color: Colors.indigo,
+
+                                        fontSize: 10,
+                                      ),))
+
+
+
+
+                              ],
+                            ),
+                          ),
+                        ),
+
+                      ],
                     ),
-
-                  ],
-                ),
-
+                  ),
+                ],
               ),
+            ),
+
             ),
 
           Container(
@@ -276,5 +277,31 @@ class _perfilUsuarioState extends State<perfilUsuario> {
         ],
       ),
     );
+
+
   }
+  Future openDialog()=>showDialog(
+      context: context,
+      builder: (context)=>AlertDialog(
+        title: Text("Status del servicio"),
+        content: (
+            SizedBox(
+                height:200,
+                width: 300,
+                child:
+                Image.asset('assets/images/progreso2.png')
+            )
+        ),
+        actions: [
+          TextButton(
+              child: Text('Cerrar'),
+              onPressed: submit,
+          )
+        ],
+      ),
+  );
+
+      void submit(){
+        Navigator.of(context).pop();
+      }
 }
