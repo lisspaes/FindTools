@@ -13,18 +13,25 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ##### Registro
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png" width="300"/>
+
 ##### Recuperación de contraseñas
 ![]()
+
 ##### Home
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg) 
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg" width="300"/>
+
 ##### Seleccion 
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png" width="300"/>
+
 ##### Perfil de prestador de servicios
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/prestador.png)
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/prestador.png" width="300"/>
+
 ##### Solicitar servicio
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png)
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png" width="300"/>
+
 ##### Perfil de usuario
-![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png)
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png" width="300"/>
+
 ##### Dejar reseña
 ![]()
 
