@@ -9,7 +9,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ### Código y Vista previa
 ##### Login
 Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
-```
+```javascript
 //Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -222,7 +222,7 @@ class LoginApp extends StatelessWidget{
 ##### Home
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
 
-```
+```javascript
 //Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
