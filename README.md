@@ -1458,6 +1458,13 @@ En la interfaz se podran encontrar los datos del prestador del servicio, tales c
 
 ###### Solicitar servicio
 En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, ademas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
+<img src="" width="375"/>
+
+##### Perfil de usuario
+En esta interfaz veremos informacion basica personal, acerca del usuario.
+Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicito. De igual manera veremos los servicios finalizados.
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/7.jpeg" width="375"/>
+
 
 
 ## Integrantes
