@@ -1437,6 +1437,7 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="375"/>
 
 ###### Olvide mi contraseña
+Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos sugerencias para recuperar su cuenta.
 <img src="" width="375"/>
 
 ##### Home
