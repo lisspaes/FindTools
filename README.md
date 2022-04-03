@@ -387,8 +387,6 @@ class buscarServicio extends StatelessWidget{
 
 ```
 
-
-```
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg)
 ##### Selección de servicios 
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
