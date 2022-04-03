@@ -1429,6 +1429,8 @@ En la parte superior encontramos una barra, en el cual tenemos el menu y se encu
 - Agregar servicio
 - Servicios pendientes
 - Cerrar sesion 
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="375" alt="fff"/>
+
 ###### Servicios
 
 
