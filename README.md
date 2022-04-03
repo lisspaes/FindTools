@@ -12,7 +12,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ##### Recuperación de contraseñas
 ![]()
 ##### Home
-![]("https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg" width="375") width="375"
+![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg) 
 ##### Seleccion 
 ![](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/seleccion.png)
 ##### Perfil de prestador de servicios
