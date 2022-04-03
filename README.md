@@ -1438,6 +1438,7 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 
 ###### Olvide mi contraseña
 Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos sugerencias para recuperar su cuenta.
+
 <img src="" width="375"/>
 
 ##### Home
