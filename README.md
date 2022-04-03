@@ -826,7 +826,7 @@ class buscarServicio extends StatelessWidget{
 }
 
 ```
-##### Menu
+##### Menù
 En la clase declarada como “Home”, podras identificar la informaciòn del usuario, asi como tambien veremos los diferentes fragments que se encuentran dentro de un drawer.
 
 ```javascript
@@ -1430,8 +1430,8 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
-###### Menu
-En la parte superior encontramos una barra, en el cual tenemos el menu y se encuentran algunos indicadores:
+###### Menù
+En la parte superior encontramos una barra, en el cual tenemos el menù y se encuentran algunos indicadores:
 - Mi perfil
 -  Buscar servicio
 - Agregar servicio
@@ -1458,12 +1458,12 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/8.jpeg" width="375"/>
 
 ###### Solicitar servicio
-5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, ademas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
+5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, àdemas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
 <img src="" width="375"/>
 
 ##### Perfil de usuario
-6. En esta interfaz veremos informacion basica personal, acerca del usuario.
-Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicito. De igual manera veremos los servicios finalizados.
+6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
+Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicitò. De igual manera veremos los servicios finalizados.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/7.jpeg" width="375"/>
 
 
