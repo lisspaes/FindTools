@@ -1,6 +1,6 @@
 # Flutter FindTools
 ###  Descripción de la Aplicación
-Esta aplicación está  que basada en aplicaciones de servicio de viaje y aplicaciones de citas como lo son: Uber, DiDi, Tinder, CuteU, etc. La diferencia de Find Tools es que esta APP no realizara viajes ni entrega de paquetes.
+Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicaciones de citas como lo son: Uber, DiDi, Tinder, CuteU, etc. La diferencia de Find Tools es que esta APP no realizara viajes ni entrega de paquetes.
 
  La idea de Find Tools es crear una carterade trabajo donde se puedan encontrar distintos servicios como: servicio de plomero, electricista, mecánico, etc. Esto ayudara que los trabajadores puedan dar a conocer su trabajo a través de la APP.
  
@@ -8,6 +8,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ### Código 
 ##### Login
+
 ##### Registro
 ##### Recuperación de contraseñas
 ##### Home
