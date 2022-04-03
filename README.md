@@ -1415,6 +1415,7 @@ List<Resenas> resenasLista = [
 ### Manual de Usuario
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
 ###### Crear una cuenta
 Al seleccionar el boton crear cuenta, nos mandara a otra interfaz en donde  ingresaremos datos como:
 - email
