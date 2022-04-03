@@ -1443,6 +1443,10 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 - albañileria, etc...
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/5.jpeg" width="375"/>
 
+##### Selección de servicios
+En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio.
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/6.jpeg" width="375"/>
+
 
 ## Integrantes
 - Beltrán García Julio Edgar 
