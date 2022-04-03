@@ -232,6 +232,8 @@ class LoginApp extends StatelessWidget{
 }
 
 ```
+##### Registro
+##### Recuperación de contraseñas
 ##### Home
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
 
@@ -489,6 +491,10 @@ class _interfazServicios extends State<servicios> {
   }
 }
 ```
+##### Perfil de prestador de servicios
+##### Solicitar servicio
+##### Perfil de usuario
+##### Dejar reseña
 
 ### Manual de Usuario
 #####  Login
