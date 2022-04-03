@@ -1446,22 +1446,22 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/5.jpeg" width="375"/>
 
 ##### Selección de servicios
-En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio.
+3. En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/6.jpeg" width="375"/>
 
 ##### Perfil del prestador del servicio
-En la interfaz se podran encontrar los datos del prestador del servicio, tales como:
+4. En la interfaz se podran encontrar los datos del prestador del servicio, tales como:
 - Datos personales
 - Curriculum vitae
 - Reseñas de sus servicios anteriores
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/8.jpeg" width="375"/>
 
 ###### Solicitar servicio
-En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, ademas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
+5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, ademas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
 <img src="" width="375"/>
 
 ##### Perfil de usuario
-En esta interfaz veremos informacion basica personal, acerca del usuario.
+6. En esta interfaz veremos informacion basica personal, acerca del usuario.
 Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicito. De igual manera veremos los servicios finalizados.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/7.jpeg" width="375"/>
 
