@@ -1436,10 +1436,11 @@ En la parte superior encontramos una barra, en el cual tenemos el menu y se encu
 - Cerrar sesion 
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="375"/>
 
-
-------------
 ###### Servicios
-En el interfaz home podras buscar el tipo de servicio que el usuario requiera
+En el interfaz home podras buscar el tipo de servicio que el usuario requiera, tales como:
+- plomeria
+- electricidad
+- albañileria, etc...
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/5.jpeg" width="375"/>
 
 
