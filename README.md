@@ -1447,6 +1447,16 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/6.jpeg" width="375"/>
 
+##### Perfil del prestador del servicio
+En la interfaz se podran encontrar los datos del prestador del servicio, tales como:
+- Datos personales
+- Curriculum vitae
+- Reseñas de sus servicios anteriores
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/8.jpeg" width="375"/>
+
+###### Solicitar servicio
+En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, ademas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
+
 
 ## Integrantes
 - Beltrán García Julio Edgar 
