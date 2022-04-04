@@ -324,7 +324,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
-	//Alinear widget 
+//Alinear widget 
                         Align(
                           alignment: AlignmentDirectional(0, -0.8),
                           child: Padding(
@@ -339,7 +339,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
-		//Alinear widget
+//Alinear widget
                                 children: [
                                   Align(
                                     alignment: AlignmentDirectional(0, -0.65),
@@ -357,7 +357,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
-	//Dentro del padding tendremos un TextFormField para ingresar el correo
+//Dentro del padding tendremos un TextFormField para ingresar el correo
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -410,7 +410,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
-	//Alinear widget
+//Alinear widget
                                   Align(
                                     alignment: AlignmentDirectional(0, -1),
                                     child: Padding(
@@ -427,7 +427,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
-	//Dentro del padding tendremos un TextFormField para ingresar la contraseña
+//Dentro del padding tendremos un TextFormField para ingresar la contraseña
 
                                         child: Padding(
                                           padding:
@@ -437,7 +437,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             controller: textController2,
                                             obscureText: false,
 					    
-		//Estilo del textformfield
+//Estilo del textformfield
                                             decoration: InputDecoration(
                                               hintText: 'Contraseña',
                                               enabledBorder:
@@ -483,7 +483,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
-		//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
+//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -1),
@@ -504,7 +504,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     4, 0, 0, 0),
-			//TextFormFiel indica la caja del texto para confirmar contraseña
+//TextFormFiel indica la caja del texto para confirmar contraseña
                                             child: TextFormField(
                                               controller: textController3,
                                               obscureText: false,
@@ -555,7 +555,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
-			//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
+//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -2.5),
@@ -1322,7 +1322,85 @@ class perfilServicio extends StatelessWidget {
 ```
 
 
-##### Solicitar servicio
+##### Servicios pendientes
+En la clase servicios pendientes se mostrara la interfaz de los servicios que aun no se han realizado, para esto utilizaremos los siguiente widgets<
+
+```javascript
+//importar la dependencia .dart
+import 'package:flutter/material.dart';
+//clase serviciosPendientes
+class serviciosPendientes extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Center(
+      child: Card(
+          clipBehavior: Clip.antiAlias,
+          child: Column(
+            children: [
+              ListTile(
+                leading: Icon(Icons.arrow_drop_down_circle),
+                title: const Text('Card title 1'),
+                subtitle: Text(
+                  'Secondary Text',
+                  style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                ),
+              ),
+//Padding  agrega relleno o espacio vacío alrededor de un widget.
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                  style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                ),
+              ),
+//ButtonBar es la barra de botones, se usa para organizar los botones en un orden particular.
+              ButtonBar(
+                alignment: MainAxisAlignment.start,
+                children: [
+//Dentro del widget buttonbar usamos el botón  FlatButton, es un botón plano sin efecto de sombra y sin borde.
+                  FlatButton(
+                    textColor: const Color(0xFF6200EE),
+                    onPressed: () {
+                      // Perform some action
+                    },
+                    child: const Text('ACTION 1'),
+                  ),
+                  FlatButton(
+                    textColor: const Color(0xFF6200EE),
+                    onPressed: () {
+                      // Perform some action
+                    },
+                    child: const Text('ACTION 2'),
+                  ),
+                ],
+              ),
+//Container  permite personalizar el widget hijo como column e image
+              Container(
+                width: 100,
+
+                child: Column(
+                  children: [
+                    const Image(
+                      image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/pintor.jpg'),
+                    ),
+                    TextButton(onPressed: (){print('Seleccionar');},
+                        child: Text("Mostrar status",
+                          style: TextStyle(
+                            color: Colors.indigo,
+                            fontSize: 10,
+                          ),))
+                  ],
+                ),
+              ),
+
+            ],
+          ),
+        ),
+      );
+
+  }
+}
+```
 
 ##### Perfil de usuario
 En la clase declarada como “perfilUsuario”, podras identificar la datos del usuario, asi como informacion de sus servicios en procesos y o terminados.
