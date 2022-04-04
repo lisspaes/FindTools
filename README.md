@@ -716,6 +716,7 @@ class buscarServicio extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+//Card permite adaptar o colocar dentro de la misma los widget: text e image.
           Card(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -769,6 +770,8 @@ class buscarServicio extends StatelessWidget{
               mainAxisSpacing: 10,
               crossAxisCount: 2,
               children: <Widget>[
+	      //Los servicios estaran dentro de un contenedor
+	      //Contenedor del servicio 1
                 Container(
                   child: Stack(
                     children: [
@@ -789,6 +792,7 @@ class buscarServicio extends StatelessWidget{
                   ),
 
                 ),
+		  //Contenedor del servicio 2
                 Container(
                   child: Stack(
                     children: [
@@ -807,7 +811,7 @@ class buscarServicio extends StatelessWidget{
                     ],
                   ),
                 ),
-
+  //Contenedor del servicio 3
                 Container(
                   child: Stack(
                     children: [
@@ -827,6 +831,7 @@ class buscarServicio extends StatelessWidget{
                   ),
                   color: Colors.teal[100],
                 ),
+	//Contenedor del servicio 1
                 Container(
                   child: Stack(
                     children: [
@@ -901,6 +906,7 @@ int selectD = 1;
 
   @override
   Widget build(BuildContext context) {
+  //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo de la app
     return Scaffold(
       appBar: AppBar(
         title: Text("FindTools"),
@@ -937,6 +943,7 @@ int selectD = 1;
                 _onSelectItem(0);
               },
             ),
+//esto representa un divisor, los separadores se pueden usaron en lista.
             Divider(),
             ListTile(
               title: Text("Buscar servicio"),
@@ -1026,6 +1033,7 @@ class _interfazServicios extends State<servicios> {
             style: TextStyle(fontSize: 15,
             ),
           ),
+// Expanded expande a su hijo para rellenar el espacio disponible.
           Expanded(
 //ListView  permite desplazar en forma de eje tranversal de los prestadores de servicio.
             child: ListView.builder(
@@ -1088,7 +1096,7 @@ class _interfazServicios extends State<servicios> {
 
 El codigo de la clase Perfiles  
 ```javascript
-//impor permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
+//import permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
 import 'package:flutter/material.dart';
 //variables a usar de las clase perfiles
 class Perfiles {
@@ -1107,7 +1115,7 @@ class Perfiles {
     required this.imagenURL
   });
 }
-
+//Los perfiles se mostraran en forma de fila
 List<Perfiles> perfilesLista = [
   Perfiles(
       nombre: "Juan Sánchez",
@@ -1140,6 +1148,7 @@ List<Perfiles> perfilesLista = [
 ##### Perfil de prestador de servicios  
 
 ```javascript
+//Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
 import 'package:login_app/screens/perfiles.dart';
 import 'package:url_launcher/link.dart';
@@ -1147,16 +1156,19 @@ import 'package:login_app/screens/resenas.dart';
 import 'package:login_app/screens/solicitarServicio.dart';
 
 class perfilServicio extends StatelessWidget {
+// Los campos en una subclase de Widgets siempre están marcados como "final".
   final Perfiles perfiles;
   perfilServicio(this.perfiles);
 
   @override
   Widget build(BuildContext context){
+  //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo solicitar servicio
     return Scaffold(
       appBar: AppBar(
         title: Text("Solicitar servicio"),
         backgroundColor: Colors.indigo,
       ),
+      // el body es la mayor parte de la pantalla.
       body: Container(
 
         margin: EdgeInsets.all(30),
@@ -1165,6 +1177,7 @@ class perfilServicio extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
+	      // Row es un diseño horizontal y lineal.
                 child: Row(
                   children: [
                     Container(
@@ -1393,13 +1406,11 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                                          fontSize: 10,
                                        ),))
 
-
-
-
                                ],
                              ),
                            ),
                          ),
+	//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1421,6 +1432,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
+	//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1443,6 +1455,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
+	//padding  agrega relleno o espacio vacío alrededor del container y column.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1474,7 +1487,8 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
               ),
             ),
-
+	  
+//Container  permite personalizar el widget hijo como column, text, SizedBox, labelText,  Padding y  TextButton de nuestra app
           Container(
             height: 250,
 
@@ -1494,7 +1508,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                       child:  ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -1530,6 +1544,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                               ),
                             ),
                           ),
+	//padding  agrega relleno o espacio vacío alrededor de un widget.
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -1551,6 +1566,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
                                             fontSize: 10,),
                                         ),
+	//Icon es un apoyo visual con signos gráficos que nos apoya en la representación de mensajes
                                         Icon(
                                           Icons.star_border_outlined,
                                           color: Colors.indigo,
