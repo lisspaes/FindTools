@@ -130,6 +130,7 @@ class LoginApp extends StatelessWidget{
                         fontSize: 15,
                       ),),
                     const SizedBox(height: 30,),
+//Dentro de un container tendremos TextField para poder ingresar el email del usuario y para configurar el color de fondo utiliaremos el decoration.
                     Container(
                       width: 260,
                       height: 60,
@@ -144,6 +145,7 @@ class LoginApp extends StatelessWidget{
                       ),
                     ),
                     const SizedBox(height: 12,),
+	//En el contenedor tendremos TextField para poder ingresar la contraseña y para configurar el color de fondo utiliaremos el decoration.
                     Container(
                       width: 260,
                       height: 60,
@@ -158,10 +160,12 @@ class LoginApp extends StatelessWidget{
                         ),
                       ),
                     ),
+	//widget padding  agrega relleno o espacio vacío alrededor de un widget.
                     Padding(
                       padding:const EdgeInsets.fromLTRB(20, 0, 30, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
+	//TextButton permite seleccionar cuándo el usuario presiona  el botón, puede pasar otra función que nos enlazara a la interfaz de recuperar contraseña. 
                         children: [
                           TextButton(
                             onPressed: (){
