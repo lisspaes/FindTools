@@ -1094,7 +1094,7 @@ class _interfazServicios extends State<servicios> {
 
 ##### Perfiles
 
-El codigo de la clase Perfiles  
+El codigo de la clase Perfiles, sera una dependencia de la clase servicios para mostrar los perfiles de los prestadores.
 ```javascript
 //import permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
 import 'package:flutter/material.dart';
@@ -1146,7 +1146,7 @@ List<Perfiles> perfilesLista = [
 ```
 
 ##### Perfil de prestador de servicios  
-
+Con este codigo se podra visualizar la interfaz del perfil del prestador con las siguiente dependencias y widgets. 
 ```javascript
 //Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
@@ -1323,7 +1323,7 @@ class perfilServicio extends StatelessWidget {
 
 
 ##### Servicios pendientes
-En la clase servicios pendientes se mostrara la interfaz de los servicios que aun no se han realizado, para esto utilizaremos los siguiente widgets<
+En la clase servicios pendientes se mostrara la interfaz de los servicios que aun no se han realizado, para esto utilizaremos los siguiente widgets
 
 ```javascript
 //importar la dependencia .dart
