@@ -6,6 +6,12 @@ Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicacion
  
 En la aplicación se podrá encontrar información de la persona a contratar para realizar el servicio que se solicite, las personas también podrán calificar y comentar la calidad de servicio que recibieron por parte de la persona que brindo el servicio.
 
+## Tabla de contenido
+1. [Prototipo](#Prototipo)
+2. [Codigo](#Codigo)
+3. [Vista Previa](#Vista-previa)
+
+
 ### Prototipo
 ##### Login
 
@@ -15,7 +21,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png" width="300"/>
 
 ##### Recuperación de contraseñas
-![]()
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="300"/>
 
 ##### Home
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg" width="300"/>
@@ -32,10 +38,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ##### Perfil de usuario
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png" width="300"/>
 
-##### Dejar reseña
-![]()
-
-### Código 
+### Codigo 
 ##### Main
 Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
 ```javascript
@@ -52,9 +55,9 @@ import 'home.dart';
 void main(){
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-   // La función runApp muestra el control raíz en la pantalla
+ // La función runApp muestra el control raíz en la pantalla
   runApp(
-  //Envuelve todos widgets que requiere la aplicación
+ //Envuelve todos widgets que requiere la aplicación
       MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -72,13 +75,13 @@ class LoginApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-	//Cuerpo de la App
+//Cuerpo de la App
       body:
       SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-		  // Decoración de fondo
+ // Decoración de fondo
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -130,6 +133,7 @@ class LoginApp extends StatelessWidget{
                         fontSize: 15,
                       ),),
                     const SizedBox(height: 30,),
+//Dentro de un container tendremos TextField para poder ingresar el email del usuario y para configurar el color de fondo utiliaremos el decoration.
                     Container(
                       width: 260,
                       height: 60,
@@ -144,6 +148,7 @@ class LoginApp extends StatelessWidget{
                       ),
                     ),
                     const SizedBox(height: 12,),
+//En el contenedor tendremos TextField para poder ingresar la contraseña y para configurar el color de fondo utiliaremos el decoration.
                     Container(
                       width: 260,
                       height: 60,
@@ -158,10 +163,12 @@ class LoginApp extends StatelessWidget{
                         ),
                       ),
                     ),
+//widget padding  agrega relleno o espacio vacío alrededor de un widget.
                     Padding(
                       padding:const EdgeInsets.fromLTRB(20, 0, 30, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
+//TextButton permite seleccionar cuándo el usuario presiona  el botón, puede pasar otra función que nos enlazara a la interfaz de recuperar contraseña. 
                         children: [
                           TextButton(
                             onPressed: (){
@@ -194,7 +201,7 @@ class LoginApp extends StatelessWidget{
                         ],
                       ),
                     ),
-	//GestureDetector maneja los gestos
+//GestureDetector maneja los gestos
                     GestureDetector(
                       onTap: (){
                         Navigator.push(context,
@@ -250,21 +257,23 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 
-//Clase HomePageWidget
+//Clase HomePageWidget define un widget de formulario personalizado
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key}) : super(key: key);
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
 }
-
+// Define una clase de estado correspondiente. Esta clase contendrá los datos relacionados
+// con nuestro formulario.
 class _HomePageWidgetState extends State<HomePageWidget> {
-
+ // Crea un controlador de texto
   late TextEditingController textController1;
   late TextEditingController textController2;
   late TextEditingController textController3;
   final scaffoldKey = GlobalKey<ScaffoldState>();
-
+  
+ //este método se ejecuta automáticamente, después del constructor de la clase. initState()se llama solo una vez 
   @override
   void initState() {
     super.initState();
@@ -272,7 +281,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     textController2 = TextEditingController();
     textController3 = TextEditingController();
   }
-
+//widget es invocado el método build, usa los valores almacenados por aquél (el widget) para derivar nuevos argumentos para los widgets que crea
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -303,7 +312,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(5, 0, 0, 0),
-//Widget text para agregar texto 
+//Widget text para agregar texto, se usara un style para el estilo del texto para la app.
                               child: Text(
                                 'Crear una cuenta nueva',
                                 textAlign: TextAlign.start,
@@ -318,6 +327,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
+//Alinear widget 
                         Align(
                           alignment: AlignmentDirectional(0, -0.8),
                           child: Padding(
@@ -332,6 +342,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
+//Alinear widget
                                 children: [
                                   Align(
                                     alignment: AlignmentDirectional(0, -0.65),
@@ -349,6 +360,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
+//Dentro del padding tendremos un TextFormField para ingresar el correo
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -401,6 +413,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+//Alinear widget
                                   Align(
                                     alignment: AlignmentDirectional(0, -1),
                                     child: Padding(
@@ -417,6 +430,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
+//Dentro del padding tendremos un TextFormField para ingresar la contraseña
+
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -424,6 +439,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           child: TextFormField(
                                             controller: textController2,
                                             obscureText: false,
+					    
+//Estilo del textformfield
                                             decoration: InputDecoration(
                                               hintText: 'Contraseña',
                                               enabledBorder:
@@ -469,6 +486,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -1),
@@ -489,6 +507,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     4, 0, 0, 0),
+//TextFormFiel indica la caja del texto para confirmar contraseña
                                             child: TextFormField(
                                               controller: textController3,
                                               obscureText: false,
@@ -539,6 +558,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -2.5),
@@ -564,6 +584,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
+//Dentro del padding tendremos un container y dentro de ese container una columna donde tendra un boton para poder guardar el usuario creado
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 15),
                           child: Container(
@@ -698,6 +719,7 @@ class buscarServicio extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+//Card permite adaptar o colocar dentro de la misma los widget: text e image.
           Card(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -751,6 +773,8 @@ class buscarServicio extends StatelessWidget{
               mainAxisSpacing: 10,
               crossAxisCount: 2,
               children: <Widget>[
+	      //Los servicios estaran dentro de un contenedor
+	//Contenedor del servicio 1
                 Container(
                   child: Stack(
                     children: [
@@ -771,6 +795,7 @@ class buscarServicio extends StatelessWidget{
                   ),
 
                 ),
+	//Contenedor del servicio 2
                 Container(
                   child: Stack(
                     children: [
@@ -789,7 +814,7 @@ class buscarServicio extends StatelessWidget{
                     ],
                   ),
                 ),
-
+  //Contenedor del servicio 3
                 Container(
                   child: Stack(
                     children: [
@@ -809,6 +834,7 @@ class buscarServicio extends StatelessWidget{
                   ),
                   color: Colors.teal[100],
                 ),
+	//Contenedor del servicio 4
                 Container(
                   child: Stack(
                     children: [
@@ -883,6 +909,7 @@ int selectD = 1;
 
   @override
   Widget build(BuildContext context) {
+  //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo de la app
     return Scaffold(
       appBar: AppBar(
         title: Text("FindTools"),
@@ -919,6 +946,7 @@ int selectD = 1;
                 _onSelectItem(0);
               },
             ),
+//esto representa un divisor, los separadores se pueden usaron en lista.
             Divider(),
             ListTile(
               title: Text("Buscar servicio"),
@@ -1008,6 +1036,7 @@ class _interfazServicios extends State<servicios> {
             style: TextStyle(fontSize: 15,
             ),
           ),
+// Expanded expande a su hijo para rellenar el espacio disponible.
           Expanded(
 //ListView  permite desplazar en forma de eje tranversal de los prestadores de servicio.
             child: ListView.builder(
@@ -1066,12 +1095,11 @@ class _interfazServicios extends State<servicios> {
 
 ```
 
-######Perfiles
+##### Perfiles
 
-El codigo de la clase Perfiles  
-
+El codigo de la clase Perfiles, sera una dependencia de la clase servicios para mostrar los perfiles de los prestadores.
 ```javascript
-//impor permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
+//import permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
 import 'package:flutter/material.dart';
 //variables a usar de las clase perfiles
 class Perfiles {
@@ -1090,7 +1118,7 @@ class Perfiles {
     required this.imagenURL
   });
 }
-
+//Los perfiles se mostraran en forma de fila
 List<Perfiles> perfilesLista = [
   Perfiles(
       nombre: "Juan Sánchez",
@@ -1121,8 +1149,9 @@ List<Perfiles> perfilesLista = [
 ```
 
 ##### Perfil de prestador de servicios  
-
+Con este codigo se podra visualizar la interfaz del perfil del prestador con las siguiente dependencias y widgets. 
 ```javascript
+//Importar librerias y dependecias a ocupar
 import 'package:flutter/material.dart';
 import 'package:login_app/screens/perfiles.dart';
 import 'package:url_launcher/link.dart';
@@ -1130,16 +1159,19 @@ import 'package:login_app/screens/resenas.dart';
 import 'package:login_app/screens/solicitarServicio.dart';
 
 class perfilServicio extends StatelessWidget {
+// Los campos en una subclase de Widgets siempre están marcados como "final".
   final Perfiles perfiles;
   perfilServicio(this.perfiles);
 
   @override
   Widget build(BuildContext context){
+ //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo solicitar servicio
     return Scaffold(
       appBar: AppBar(
         title: Text("Solicitar servicio"),
         backgroundColor: Colors.indigo,
       ),
+  // el body es la mayor parte de la pantalla.
       body: Container(
 
         margin: EdgeInsets.all(30),
@@ -1148,6 +1180,7 @@ class perfilServicio extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
+// Row es un diseño horizontal y lineal.
                 child: Row(
                   children: [
                     Container(
@@ -1162,6 +1195,7 @@ class perfilServicio extends StatelessWidget {
                             )
                         )
                     ),
+// Column permite especificar como se alinearán los widgets utilizados en la app.
                     Column(
                       children: [
                         Text("Pintor", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
@@ -1191,6 +1225,7 @@ class perfilServicio extends StatelessWidget {
 
                 ),
               ),
+//Card permite adaptar o colocar dentro de la misma los widget: padding y Text de la app.
               Card(
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -1203,6 +1238,7 @@ class perfilServicio extends StatelessWidget {
                   ),
                 ),
               ),
+//padding  agrega relleno o espacio vacío alrededor de un widget.
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text("Reseñas", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
@@ -1211,6 +1247,7 @@ class perfilServicio extends StatelessWidget {
                 itemCount: resenasLista.length,
                 itemBuilder: (context, index){
                   Resenas resenas = resenasLista[index];
+//Retornar contenedor 
                   return Container(
                         child: Card(
                             child: ListTile(
@@ -1224,6 +1261,7 @@ class perfilServicio extends StatelessWidget {
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+// Row es un diseño horizontal y lineal.
                                   Row(
                                     children: [
                                       Text("Calificacion: ",  style: TextStyle(fontSize: 12, color: Colors.grey)),
@@ -1255,6 +1293,7 @@ class perfilServicio extends StatelessWidget {
                 },
               )
               ),
+//centrar boton
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(primary: Colors.indigo),
@@ -1286,7 +1325,85 @@ class perfilServicio extends StatelessWidget {
 ```
 
 
-##### Solicitar servicio
+##### Servicios pendientes
+En la clase servicios pendientes se mostrara la interfaz de los servicios que aun no se han realizado, para esto utilizaremos los siguiente widgets
+
+```javascript
+//importar la dependencia .dart
+import 'package:flutter/material.dart';
+//clase serviciosPendientes
+class serviciosPendientes extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return Center(
+      child: Card(
+          clipBehavior: Clip.antiAlias,
+          child: Column(
+            children: [
+              ListTile(
+                leading: Icon(Icons.arrow_drop_down_circle),
+                title: const Text('Card title 1'),
+                subtitle: Text(
+                  'Secondary Text',
+                  style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                ),
+              ),
+//Padding  agrega relleno o espacio vacío alrededor de un widget.
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Text(
+                  'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                  style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                ),
+              ),
+//ButtonBar es la barra de botones, se usa para organizar los botones en un orden particular.
+              ButtonBar(
+                alignment: MainAxisAlignment.start,
+                children: [
+//Dentro del widget buttonbar usamos el botón  FlatButton, es un botón plano sin efecto de sombra y sin borde.
+                  FlatButton(
+                    textColor: const Color(0xFF6200EE),
+                    onPressed: () {
+                      // Perform some action
+                    },
+                    child: const Text('ACTION 1'),
+                  ),
+                  FlatButton(
+                    textColor: const Color(0xFF6200EE),
+                    onPressed: () {
+                      // Perform some action
+                    },
+                    child: const Text('ACTION 2'),
+                  ),
+                ],
+              ),
+//Container  permite personalizar el widget hijo como column e image
+              Container(
+                width: 100,
+
+                child: Column(
+                  children: [
+                    const Image(
+                      image: NetworkImage('https://web.hometask.mx/wp-content/uploads/2021/07/pintor.jpg'),
+                    ),
+                    TextButton(onPressed: (){print('Seleccionar');},
+                        child: Text("Mostrar status",
+                          style: TextStyle(
+                            color: Colors.indigo,
+                            fontSize: 10,
+                          ),))
+                  ],
+                ),
+              ),
+
+            ],
+          ),
+        ),
+      );
+
+  }
+}
+```
 
 ##### Perfil de usuario
 En la clase declarada como “perfilUsuario”, podras identificar la datos del usuario, asi como informacion de sus servicios en procesos y o terminados.
@@ -1376,13 +1493,11 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                                          fontSize: 10,
                                        ),))
 
-
-
-
                                ],
                              ),
                            ),
                          ),
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1404,6 +1519,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1426,6 +1542,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
+//padding  agrega relleno o espacio vacío alrededor del container y column.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1457,7 +1574,8 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
               ),
             ),
-
+	  
+//Container  permite personalizar el widget hijo como column, text, SizedBox, labelText,  Padding y  TextButton de nuestra app
           Container(
             height: 250,
 
@@ -1477,7 +1595,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                       child:  ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -1513,6 +1631,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                               ),
                             ),
                           ),
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -1534,6 +1653,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
                                             fontSize: 10,),
                                         ),
+//Icon es un apoyo visual con signos gráficos que nos apoya en la representación de mensajes
                                         Icon(
                                           Icons.star_border_outlined,
                                           color: Colors.indigo,
@@ -1645,7 +1765,7 @@ List<Resenas> resenasLista = [
 
 
 
-### Manual de Usuario
+### Vista previa
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
@@ -1654,14 +1774,14 @@ List<Resenas> resenasLista = [
 Al seleccionar el boton crear cuenta, nos mandara a otra interfaz en donde  ingresaremos datos como:
 - email
 - contraseña 
-- confirmar
+- confirmar,
 cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="375"/>
 
 ###### Olvide mi contraseña
-Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos sugerencias para recuperar su cuenta.
+Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos un codigo de verificaciòn para recuperar su cuenta a su correo.
 
-<img src="" width="375"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="375"/>
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
@@ -1694,7 +1814,7 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 
 ###### Solicitar servicio
 5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, àdemas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
-<img src="" width="375"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png" width="300"/>
 
 ##### Perfil de usuario
 6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
