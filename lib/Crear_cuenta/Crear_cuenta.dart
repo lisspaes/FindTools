@@ -1,5 +1,3 @@
-import 'package:login_app/main.dart';
-
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
