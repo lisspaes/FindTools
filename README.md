@@ -9,7 +9,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ## Tabla de contenido
 1. [Prototipo](#Prototipo)
 2. [Codigo](#Codigo)
-3. [Vista Previa](#Vista_previa)
+3. [Vista Previa](#Vista previa)
 
 
 ### Prototipo
