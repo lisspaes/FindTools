@@ -691,6 +691,198 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 ```
 
 ##### Recuperación de contraseñas
+En la clase declarada como “UnknowPasswordWidget", permite a un visitante recuperar su contraseña perdida por medio de un codigò.
+
+```javascript
+//importar dependencias y librerias a ocupar
+import '../flutter_flow/flutter_flow_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+//Nombre de la clase
+class UnknowPasswordWidget extends StatefulWidget {
+  const UnknowPasswordWidget({Key? key}) : super(key: key);
+
+  @override
+  _UnknowPasswordWidgetState createState() => _UnknowPasswordWidgetState();
+}
+
+class _UnknowPasswordWidgetState extends State<UnknowPasswordWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: scaffoldKey,
+      backgroundColor: Color(0xFFF6F6F6),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Column(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Stack(
+                      children: [
+                        Align(
+                          alignment: AlignmentDirectional(0, 0),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width,
+                            height: 90,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [Color(0xB3FFFFFF), Color(0x00FFFFFF)],
+                                stops: [0, 1],
+                                begin: AlignmentDirectional(0, -1),
+                                end: AlignmentDirectional(0, 1),
+                              ),
+                            ),
+                          ),
+                        ),
+	//Padding  agrega relleno o espacio vacío alrededor de un widget.
+                        Padding(
+                          padding:
+                              EdgeInsetsDirectional.fromSTEB(16, 40, 16, 16),
+                          child: InkWell(
+                            onTap: () async {
+                              Navigator.pop(context);
+                            },
+                            child: Card(
+                              clipBehavior: Clip.antiAliasWithSaveLayer,
+                              color: Color(0xB3FFFFFF),
+                              elevation: 3,
+                              child: Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
+                                child: Icon(
+                                  Icons.arrow_back_rounded,
+                                  color:
+                                      FlutterFlowTheme.of(context).primaryColor,
+                                  size: 24,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+//Agrega relleno o espacio vacío alrededor de un container.
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                      child: Container(
+                        width: MediaQuery.of(context).size.width * 0.87,
+                        height: 1,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFF6F6F6),
+                        ),
+                      ),
+                    ),
+//Agrega relleno o espacio vacío alrededor de un row y text.
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 4, 0, 20),
+                            child: Text(
+                              '¿Olvidaste tu contraseña?',
+                              style: FlutterFlowTheme.of(context)
+                                  .subtitle1
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.black,
+                                    fontSize: 22,
+                                  ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+//Agrega relleno o espacio vacío alrededor de un row y text.
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(12, 4, 12, 4),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Expanded(
+                            child: Text(
+                              'Podemos ayudarte a restablecer tu contraseña.',
+                              style: FlutterFlowTheme.of(context)
+                                  .bodyText2
+                                  .override(
+                                    fontFamily: 'Poppins',
+                                    fontSize: 13,
+                                  ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+//Container  permite personalizar el widget hijo como: column que sera centrado, text, card, image y botton de nuestra app
+                    Container(
+                      margin: const EdgeInsets.all(25.0),
+                      child: Center(
+                        child: Column(
+                          children: [
+//El textField crea una función para imprimir el email
+                            TextField(
+//Decoraciòn del textField
+                                decoration: new InputDecoration(
+                                  prefixIcon: Icon(Icons.email, size: 20),
+                                  hintText: 'Ingresa tu email',
+                                )
+                            ),
+//ElevateButton es una etiqueta secundaria que se muestra en un widget Material cuya Material.elevation aumenta cuando se presiona el botón.
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(primary: Colors.indigo),
+                              child: Text(
+                                'Obten un codigo de verificacion',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText2
+                                    .override(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
+                                ),
+                              ),
+                              onPressed: (){
+                                openDialog();
+                              },
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+//Establece varias propiedades para definir el filtro de extensión de archivo y el comportamiento del cuadro de diálogo
+Future openDialog()=>showDialog(
+    context: context,
+    builder: (context)=>AlertDialog(
+      title: Text(
+        'Hemos  enviado un correo a tu cuenta para reestablecer tu contraseña, por favor verifica tu correo.',
+        textAlign: TextAlign.justify,
+        style: GoogleFonts.getFont(
+          'Lexend Deca',
+          color:
+          FlutterFlowTheme.of(context).primaryColor,
+        ),
+      ),
+      actions: [
+        TextButton(
+          child: Text('Cerrar'),
+          onPressed: submit,
+        )
+      ],
+    ),
+  );
+//El evento submit se activa cuando el formulario es enviado
+  void submit(){
+    Navigator.of(context).pop();
+  }
+}
+```
 
 ##### Buscar servicio
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
