@@ -771,7 +771,7 @@ class buscarServicio extends StatelessWidget{
               crossAxisCount: 2,
               children: <Widget>[
 	      //Los servicios estaran dentro de un contenedor
-	      //Contenedor del servicio 1
+	//Contenedor del servicio 1
                 Container(
                   child: Stack(
                     children: [
@@ -792,7 +792,7 @@ class buscarServicio extends StatelessWidget{
                   ),
 
                 ),
-		  //Contenedor del servicio 2
+	//Contenedor del servicio 2
                 Container(
                   child: Stack(
                     children: [
@@ -831,7 +831,7 @@ class buscarServicio extends StatelessWidget{
                   ),
                   color: Colors.teal[100],
                 ),
-	//Contenedor del servicio 1
+	//Contenedor del servicio 4
                 Container(
                   child: Stack(
                     children: [
@@ -1221,6 +1221,7 @@ class perfilServicio extends StatelessWidget {
 
                 ),
               ),
+//Card permite adaptar o colocar dentro de la misma los widget: padding y Text de la app.
               Card(
                 child: Padding(
                   padding: const EdgeInsets.all(15.0),
@@ -1233,6 +1234,7 @@ class perfilServicio extends StatelessWidget {
                   ),
                 ),
               ),
+//padding  agrega relleno o espacio vacío alrededor de un widget.
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text("Reseñas", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
@@ -1241,6 +1243,7 @@ class perfilServicio extends StatelessWidget {
                 itemCount: resenasLista.length,
                 itemBuilder: (context, index){
                   Resenas resenas = resenasLista[index];
+	//Retornar contenedor 
                   return Container(
                         child: Card(
                             child: ListTile(
@@ -1254,6 +1257,7 @@ class perfilServicio extends StatelessWidget {
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+	// Row es un diseño horizontal y lineal.
                                   Row(
                                     children: [
                                       Text("Calificacion: ",  style: TextStyle(fontSize: 12, color: Colors.grey)),
@@ -1285,6 +1289,7 @@ class perfilServicio extends StatelessWidget {
                 },
               )
               ),
+	      //centrar boton
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(primary: Colors.indigo),
