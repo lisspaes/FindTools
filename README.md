@@ -324,6 +324,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
+	//Alinear widget 
                         Align(
                           alignment: AlignmentDirectional(0, -0.8),
                           child: Padding(
@@ -338,6 +339,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
+		//Alinear widget
                                 children: [
                                   Align(
                                     alignment: AlignmentDirectional(0, -0.65),
@@ -408,6 +410,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+	//Alinear widget
                                   Align(
                                     alignment: AlignmentDirectional(0, -1),
                                     child: Padding(
@@ -433,6 +436,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                           child: TextFormField(
                                             controller: textController2,
                                             obscureText: false,
+					    
+		//Estilo del textformfield
                                             decoration: InputDecoration(
                                               hintText: 'Contraseña',
                                               enabledBorder:
@@ -478,6 +483,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+		//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -1),
@@ -498,6 +504,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             padding:
                                                 EdgeInsetsDirectional.fromSTEB(
                                                     4, 0, 0, 0),
+			//TextFormFiel indica la caja del texto para confirmar contraseña
                                             child: TextFormField(
                                               controller: textController3,
                                               obscureText: false,
@@ -548,6 +555,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                     ),
                                   ),
+			//Expended permite indicar que queremos que el widget ocupe todo el espacio posible
                                   Expanded(
                                     child: Align(
                                       alignment: AlignmentDirectional(0, -2.5),
@@ -573,6 +581,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             ),
                           ),
                         ),
+//Dentro del padding tendremos un container y dentro de ese container una columna donde tendra un boton para poder guardar el usuario creado
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 15),
                           child: Container(
