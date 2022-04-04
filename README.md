@@ -52,9 +52,9 @@ import 'home.dart';
 void main(){
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-   // La función runApp muestra el control raíz en la pantalla
+ // La función runApp muestra el control raíz en la pantalla
   runApp(
-  //Envuelve todos widgets que requiere la aplicación
+ //Envuelve todos widgets que requiere la aplicación
       MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
@@ -72,13 +72,13 @@ class LoginApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-	//Cuerpo de la App
+//Cuerpo de la App
       body:
       SingleChildScrollView(
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
-		  // Decoración de fondo
+ // Decoración de fondo
           decoration: const BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -145,7 +145,7 @@ class LoginApp extends StatelessWidget{
                       ),
                     ),
                     const SizedBox(height: 12,),
-	//En el contenedor tendremos TextField para poder ingresar la contraseña y para configurar el color de fondo utiliaremos el decoration.
+//En el contenedor tendremos TextField para poder ingresar la contraseña y para configurar el color de fondo utiliaremos el decoration.
                     Container(
                       width: 260,
                       height: 60,
@@ -160,12 +160,12 @@ class LoginApp extends StatelessWidget{
                         ),
                       ),
                     ),
-	//widget padding  agrega relleno o espacio vacío alrededor de un widget.
+//widget padding  agrega relleno o espacio vacío alrededor de un widget.
                     Padding(
                       padding:const EdgeInsets.fromLTRB(20, 0, 30, 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,
-	//TextButton permite seleccionar cuándo el usuario presiona  el botón, puede pasar otra función que nos enlazara a la interfaz de recuperar contraseña. 
+//TextButton permite seleccionar cuándo el usuario presiona  el botón, puede pasar otra función que nos enlazara a la interfaz de recuperar contraseña. 
                         children: [
                           TextButton(
                             onPressed: (){
@@ -198,7 +198,7 @@ class LoginApp extends StatelessWidget{
                         ],
                       ),
                     ),
-	//GestureDetector maneja los gestos
+//GestureDetector maneja los gestos
                     GestureDetector(
                       onTap: (){
                         Navigator.push(context,
@@ -254,21 +254,23 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 
-//Clase HomePageWidget
+//Clase HomePageWidget define un widget de formulario personalizado
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key}) : super(key: key);
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
 }
-
+// Define una clase de estado correspondiente. Esta clase contendrá los datos relacionados
+// con nuestro formulario.
 class _HomePageWidgetState extends State<HomePageWidget> {
-
+ // Crea un controlador de texto
   late TextEditingController textController1;
   late TextEditingController textController2;
   late TextEditingController textController3;
   final scaffoldKey = GlobalKey<ScaffoldState>();
-
+  
+ //este método se ejecuta automáticamente, después del constructor de la clase. initState()se llama solo una vez 
   @override
   void initState() {
     super.initState();
@@ -276,7 +278,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     textController2 = TextEditingController();
     textController3 = TextEditingController();
   }
-
+//widget es invocado el método build, usa los valores almacenados por aquél (el widget) para derivar nuevos argumentos para los widgets que crea
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -307,7 +309,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             child: Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(5, 0, 0, 0),
-//Widget text para agregar texto 
+//Widget text para agregar texto, se usara un style para el estilo del texto para la app.
                               child: Text(
                                 'Crear una cuenta nueva',
                                 textAlign: TextAlign.start,
@@ -353,6 +355,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
+	//Dentro del padding tendremos un TextFormField para ingresar el correo
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
@@ -421,6 +424,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                             color: Color(0xFF9F9F9F),
                                           ),
                                         ),
+	//Dentro del padding tendremos un TextFormField para ingresar la contraseña
+
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
