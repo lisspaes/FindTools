@@ -670,6 +670,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 ```
 
 ##### Recuperación de contraseñas
+
 ##### Buscar servicio
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
 
@@ -1063,8 +1064,11 @@ class _interfazServicios extends State<servicios> {
   }
 }
 ```
+
 ######Perfiles
+
 El codigo de la clase Perfiles  
+
 ```javascript
 //impor permite construir tu app rápidamente sin tener que desarrollar todo desde cero.
 import 'package:flutter/material.dart';
@@ -1116,6 +1120,7 @@ List<Perfiles> perfilesLista = [
 ```
 
 ##### Perfil de prestador de servicios  
+
 ```javascript
 import 'package:flutter/material.dart';
 import 'package:login_app/screens/perfiles.dart';
