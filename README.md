@@ -36,7 +36,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ![]()
 
 ### Código 
-##### Login
+##### Main
 Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
 ```javascript
 //Importar librerias y dependecias a ocupar
@@ -241,7 +241,7 @@ class LoginApp extends StatelessWidget{
 }
 
 ```
-##### Registro
+##### Crear cuenta
 En la clase declarada como “HomePageWidget”, el codigo sera utilizado para la interfaz de crear cuentas de usuario
 
 ```javascript
@@ -670,7 +670,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
 ```
 
 ##### Recuperación de contraseñas
-##### Home
+##### Buscar servicio
 La clase declarada como buscarServicio, es donde encontraremos las diferentes funcionalidades: Como el menú, el perfil del usuario y los diferentes servicios que la app ofrece. 
 
 ```javascript
@@ -837,7 +837,7 @@ class buscarServicio extends StatelessWidget{
 }
 
 ```
-##### Menù
+##### Home
 En la clase declarada como “Home”, podras identificar la informaciòn del usuario, asi como tambien veremos los diferentes fragments que se encuentran dentro de un drawer.
 
 ```javascript
@@ -973,9 +973,9 @@ int selectD = 1;
 
 ```
 
-##### Selección de servicios 
+##### Servicios 
 
-En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio. 
+En la clase declarada como “Servicios”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio. 
 
 ```javascript
 //Importar librerias y dependecias a ocupar
@@ -1065,7 +1065,9 @@ class _interfazServicios extends State<servicios> {
 }
 ```
 ##### Perfil de prestador de servicios
+
 ##### Solicitar servicio
+
 ##### Perfil de usuario
 En la clase declarada como “perfilUsuario”, podras identificar la datos del usuario, asi como informacion de sus servicios en procesos y o terminados.
 
