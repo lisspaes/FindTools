@@ -1700,7 +1700,7 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 ###### Olvide mi contraseña
 Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos sugerencias para recuperar su cuenta.
 
-<img src="" width="375"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="375"/>
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
