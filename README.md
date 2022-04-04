@@ -7,9 +7,9 @@ Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicacion
 En la aplicación se podrá encontrar información de la persona a contratar para realizar el servicio que se solicite, las personas también podrán calificar y comentar la calidad de servicio que recibieron por parte de la persona que brindo el servicio.
 
 ## Tabla de contenido
-1. [Prototipo](###Prototipo)
-2. [Codigo](###Código)
-3. [Vista Previa](###Vista previa)
+1. [Prototipo](### Prototipo)
+2. [Codigo](### Codigo)
+3. [Vista Previa](### Vista_previa)
 
 
 ### Prototipo
@@ -38,7 +38,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 ##### Perfil de usuario
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png" width="300"/>
 
-### Código 
+### Codigo 
 ##### Main
 Al ingresar a la app, encontramos la actividad principal, que es el inicio de sesión en donde se encuentra la clase LoginApp, para posteriormente pasar a la clase declarada buscarServicio.
 ```javascript
