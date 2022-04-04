@@ -15,7 +15,7 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Registro.png" width="300"/>
 
 ##### Recuperación de contraseñas
-![]()
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="300"/>
 
 ##### Home
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Home.jpg" width="300"/>
@@ -31,9 +31,6 @@ En la aplicación se podrá encontrar información de la persona a contratar par
 
 ##### Perfil de usuario
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/perfil.png" width="300"/>
-
-##### Dejar reseña
-![]()
 
 ### Código 
 ##### Main
