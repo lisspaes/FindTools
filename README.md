@@ -1065,9 +1065,7 @@ class _interfazServicios extends State<servicios> {
 }
 
 ```
-
-######Perfiles
-
+#####Perfiles
 El codigo de la clase Perfiles  
 
 ```javascript
