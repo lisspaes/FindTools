@@ -1733,7 +1733,7 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 
 ###### Solicitar servicio
 5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, àdemas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
-<img src="" width="375"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png" width="300"/>
 
 ##### Perfil de usuario
 6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
