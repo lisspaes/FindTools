@@ -69,7 +69,7 @@ flutter:
 
    - assets/lottie/login2.json
    - assets/images/Logo.png
-
+   - assets/images/progreso.png
 
 
   #   - images/a_dot_ham.jpeg
