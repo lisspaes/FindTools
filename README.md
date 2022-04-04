@@ -1325,6 +1325,7 @@ class perfilServicio extends StatelessWidget {
 ```
 
 #### Solicitar servicio
+La clase declarada como solicitar servicio, consiste en una petición formal realizada por parte del cliente (usuario) para obtener alguno de los servicios ofrecidos por el app. 
 
 ```javascript
 //importar dependencias y librerias a ocupar
