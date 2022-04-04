@@ -1693,12 +1693,12 @@ List<Resenas> resenasLista = [
 Al seleccionar el boton crear cuenta, nos mandara a otra interfaz en donde  ingresaremos datos como:
 - email
 - contraseña 
-- confirmar
+- confirmar,
 cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="375"/>
 
 ###### Olvide mi contraseña
-Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos sugerencias para recuperar su cuenta.
+Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos un codigo de verificaciòn para recuperar su cuenta a su correo.
 
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="375"/>
 
