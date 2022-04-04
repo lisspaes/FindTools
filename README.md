@@ -1162,13 +1162,13 @@ class perfilServicio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
-  //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo solicitar servicio
+ //Scaffold se utilizo regularmente para mostrar el menú de la app de manera lateral o el titulo solicitar servicio
     return Scaffold(
       appBar: AppBar(
         title: Text("Solicitar servicio"),
         backgroundColor: Colors.indigo,
       ),
-      // el body es la mayor parte de la pantalla.
+  // el body es la mayor parte de la pantalla.
       body: Container(
 
         margin: EdgeInsets.all(30),
@@ -1177,7 +1177,7 @@ class perfilServicio extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Card(
-	      // Row es un diseño horizontal y lineal.
+// Row es un diseño horizontal y lineal.
                 child: Row(
                   children: [
                     Container(
@@ -1192,6 +1192,7 @@ class perfilServicio extends StatelessWidget {
                             )
                         )
                     ),
+// Column permite especificar como se alinearán los widgets utilizados en la app.
                     Column(
                       children: [
                         Text("Pintor", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
@@ -1243,7 +1244,7 @@ class perfilServicio extends StatelessWidget {
                 itemCount: resenasLista.length,
                 itemBuilder: (context, index){
                   Resenas resenas = resenasLista[index];
-	//Retornar contenedor 
+//Retornar contenedor 
                   return Container(
                         child: Card(
                             child: ListTile(
@@ -1257,7 +1258,7 @@ class perfilServicio extends StatelessWidget {
                               subtitle: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-	// Row es un diseño horizontal y lineal.
+// Row es un diseño horizontal y lineal.
                                   Row(
                                     children: [
                                       Text("Calificacion: ",  style: TextStyle(fontSize: 12, color: Colors.grey)),
@@ -1289,7 +1290,7 @@ class perfilServicio extends StatelessWidget {
                 },
               )
               ),
-	      //centrar boton
+//centrar boton
               Center(
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(primary: Colors.indigo),
@@ -1415,7 +1416,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
-	//padding  agrega relleno o espacio vacío alrededor de un widget.
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1437,7 +1438,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
-	//padding  agrega relleno o espacio vacío alrededor de un widget.
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1460,7 +1461,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                              ),
                            ),
                          ),
-	//padding  agrega relleno o espacio vacío alrededor del container y column.
+//padding  agrega relleno o espacio vacío alrededor del container y column.
                          Padding(
                            padding: const EdgeInsets.all(8.0),
                            child: Container(
@@ -1549,7 +1550,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
                               ),
                             ),
                           ),
-	//padding  agrega relleno o espacio vacío alrededor de un widget.
+//padding  agrega relleno o espacio vacío alrededor de un widget.
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
@@ -1571,7 +1572,7 @@ class _perfilUsuarioState extends State<perfilUsuario> {
 
                                             fontSize: 10,),
                                         ),
-	//Icon es un apoyo visual con signos gráficos que nos apoya en la representación de mensajes
+//Icon es un apoyo visual con signos gráficos que nos apoya en la representación de mensajes
                                         Icon(
                                           Icons.star_border_outlined,
                                           color: Colors.indigo,
