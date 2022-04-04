@@ -1781,7 +1781,7 @@ cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
 ###### Olvide mi contraseña
 Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos un codigo de verificaciòn para recuperar su cuenta a su correo.
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/9.jpeg" width="375"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/11.jpeg" width="375"/>
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
@@ -1814,7 +1814,7 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 
 ###### Solicitar servicio
 5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, àdemas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/solicitar.png" width="300"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/10.jpeg" width="300"/>
 
 ##### Perfil de usuario
 6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
