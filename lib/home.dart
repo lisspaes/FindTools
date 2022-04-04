@@ -25,6 +25,8 @@ int selectD = 1;
       case 1: return buscarServicio(home: this,);
       case 2: return agregarServicios();
       case 3: return serviciosPendientes();
+      case 4: return Navigator.pop(context);
+
 
       case 100: return servicios();
     }
@@ -107,7 +109,7 @@ int selectD = 1;
               leading: Icon(Icons.exit_to_app),
               onTap: (){
                 Navigator.of(context).pop();
-                _onSelectItem(3);
+                _onSelectItem(4);
               },
             )
           ],

@@ -10,7 +10,6 @@ class perfilServicio extends StatelessWidget {
   final Perfiles perfiles;
   perfilServicio(this.perfiles);
 
-
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -138,7 +137,7 @@ class perfilServicio extends StatelessWidget {
                   style: ElevatedButton.styleFrom(primary: Colors.indigo),
                   onPressed: () {
                     Navigator.push(context,
-                    MaterialPageRoute(builder: (context)=> solicitarServicio()),
+                      MaterialPageRoute(builder: (context)=>solicitarServicio(perfiles)),
                     );
 
                   },

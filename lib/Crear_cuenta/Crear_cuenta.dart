@@ -1,3 +1,5 @@
+import 'package:login_app/main.dart';
+
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
@@ -330,8 +332,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       0, 10, 0, 0),
                                   child: FFButtonWidget(
                                     onPressed: () {
-                                      print('Button pressed ...');
-                                    },
+                                          openDialog();
+                                          },
                                     text: 'Registrarte',
                                     options: FFButtonOptions(
                                       width: 130,
@@ -372,7 +374,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                       FFButtonWidget(
                                         onPressed: () {
-                                          print('Button pressed ...');
+                                          Navigator.pop(context);
                                         },
                                         text: 'Iniciar sesión',
                                         options: FFButtonOptions(
@@ -413,5 +415,24 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         ),
       ),
     );
+  }
+  Future openDialog()=>showDialog(
+    context: context,
+    builder: (context)=>AlertDialog(
+      title: Text(
+        'Te has registrado con éxito. Inicia sesión',
+        textAlign: TextAlign.justify,
+      ),
+      actions: [
+        TextButton(
+          child: Text('Cerrar'),
+          onPressed: submit,
+        )
+      ],
+    ),
+  );
+
+  void submit(){
+    Navigator.of(context).pop();
   }
 }

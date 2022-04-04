@@ -56,9 +56,6 @@ class _UnknowPasswordWidgetState extends State<UnknowPasswordWidget> {
                               clipBehavior: Clip.antiAliasWithSaveLayer,
                               color: Color(0xB3FFFFFF),
                               elevation: 3,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
-                              ),
                               child: Padding(
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
@@ -125,78 +122,65 @@ class _UnknowPasswordWidgetState extends State<UnknowPasswordWidget> {
                         ],
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(12, 20, 12, 15),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(20, 4, 20, 4),
-                            child: Text(
-                              'Obten un codigo de verificacion',
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyText2
-                                  .override(
-                                    fontFamily: 'Poppins',
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryText,
-                                  ),
+
+                    Container(
+                      margin: const EdgeInsets.all(25.0),
+                      child: Center(
+                        child: Column(
+                          children: [
+                            TextField(
+                                decoration: new InputDecoration(
+                                  prefixIcon: Icon(Icons.email, size: 20),
+                                  hintText: 'Ingresa tu email',
+                                )
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(12, 0, 12, 4),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Expanded(
-                            child: Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(20, 8, 20, 4),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(primary: Colors.indigo),
                               child: Text(
-                                'Hemos  enviado un correo a tu cuenta para reestablecer tu contraseña, por favor verifica tu correo.',
-                                textAlign: TextAlign.justify,
-                                style: GoogleFonts.getFont(
-                                  'Lexend Deca',
-                                  color:
-                                      FlutterFlowTheme.of(context).primaryColor,
+                                'Obten un codigo de verificacion',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyText2
+                                    .override(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
                                 ),
                               ),
+                              onPressed: (){
+                                openDialog();
+                              },
                             ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 40),
-                      child: FFButtonWidget(
-                        onPressed: () {
-                          print('Button pressed ...');
-                        },
-                        text: 'Regresar al inicio de sesion',
-                        options: FFButtonOptions(
-                          width: 270,
-                          height: 50,
-                          color: Color(0xFF4C1BC7),
-                          textStyle:
-                              FlutterFlowTheme.of(context).subtitle2.override(
-                                    fontFamily: 'Poppins',
-                                    color: Colors.white,
-                                  ),
-                          elevation: 2,
-                          borderSide: BorderSide(
-                            color: Colors.transparent,
-                            width: 1,
-                          ),
-                          borderRadius: 8,
-                          iconColor: Colors.indigo, disabledColor: Colors.white70, splashColor: Colors.indigo,
-                          iconPadding: EdgeInsets.all(1), padding: EdgeInsets.all(1), iconSize: 2, disabledTextColor: Colors.white70,
+                          ],
                         ),
                       ),
                     ),
+
+                    // Padding(
+                    //   padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 40),
+                    //   child: FFButtonWidget(
+                    //     onPressed: () {
+                    //         Navigator.pop(context);
+                    //     },
+                    //     text: 'Regresar al inicio de sesion',
+                    //     options: FFButtonOptions(
+                    //       width: 200,
+                    //       height: 40,
+                    //       color: Color(0xFF4C1BC7),
+                    //       textStyle:
+                    //           FlutterFlowTheme.of(context).subtitle2.override(
+                    //                 fontFamily: 'Poppins',
+                    //                 color: Colors.white,
+                    //               ),
+                    //       elevation: 2,
+                    //       borderSide: BorderSide(
+                    //         color: Colors.transparent,
+                    //         width: 1,
+                    //       ),
+                    //       borderRadius: 8,
+                    //       iconColor: Colors.indigo, disabledColor: Colors.white70, splashColor: Colors.indigo,
+                    //       iconPadding: EdgeInsets.all(1), padding: EdgeInsets.all(1), iconSize: 2, disabledTextColor: Colors.white70,
+                    //     ),
+                    //   ),
+                    // ),
                   ],
                 ),
               ],
@@ -205,5 +189,30 @@ class _UnknowPasswordWidgetState extends State<UnknowPasswordWidget> {
         ),
       ),
     );
+
+  }
+  Future openDialog()=>showDialog(
+    context: context,
+    builder: (context)=>AlertDialog(
+      title: Text(
+        'Hemos  enviado un correo a tu cuenta para reestablecer tu contraseña, por favor verifica tu correo.',
+        textAlign: TextAlign.justify,
+        style: GoogleFonts.getFont(
+          'Lexend Deca',
+          color:
+          FlutterFlowTheme.of(context).primaryColor,
+        ),
+      ),
+      actions: [
+        TextButton(
+          child: Text('Cerrar'),
+          onPressed: submit,
+        )
+      ],
+    ),
+  );
+
+  void submit(){
+    Navigator.of(context).pop();
   }
 }
