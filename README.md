@@ -1,5 +1,4 @@
-# Flutter FindTools
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/Logo.png" width="50"/>
+# Flutter FindTools <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/Logo.png" width="50"/>
 
 ###  Descripción de la Aplicación
 Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicaciones de citas como lo son: Uber, DiDi, Tinder, CuteU, etc. La diferencia de Find Tools es que esta APP no realizara viajes ni entrega de paquetes.
