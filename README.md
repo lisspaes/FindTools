@@ -2194,7 +2194,7 @@ Para restablecer la contraseña de su cuenta, lo recomendable es seguir los paso
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
-###### Menù <img src="https://www.stickpng.com/es/img/iconos-logotipos-emojis/botones-menu/icono-menu-azul" width="50"/>
+###### Menù <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/1.png" width="50"/>
 
 En la parte superior encontramos una barra, en el cual tenemos el menù y se encuentran algunos indicadores:
 - Mi perfil
