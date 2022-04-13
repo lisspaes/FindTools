@@ -2193,11 +2193,42 @@ List<Resenas> resenasLista = [
 
 
 ### Vista previa
+
+##### Vista login
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="300"/>
+
+##### Vista registro
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="300"/>
+
+##### Vista recuperacion de contraseña
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/11.jpeg" width="300"/>
+
+##### Vista home
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/5.jpeg" width="300"/>
+
+##### Vista menu
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="300"/>
+
+##### Vista seleccion de servicios
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/6.jpeg" width="300"/>
+
+##### Vista perfil del prestador de servicio
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/8.jpeg" width="300"/>
+
+##### Vista solicitar servicio
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/10.jpeg" width="300"/>
+
+##### Vista perfil de usuario
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/7.jpeg" width="300"/>
+
+##### Vista dejar reseña
+
 ### Diseño de la base de datos
+
 ### Manual de usuario
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
+
 
 ###### Crear una cuenta
 Al seleccionar el boton crear cuenta, nos mandara a otra interfaz en donde  ingresaremos datos como:
@@ -2205,16 +2236,15 @@ Al seleccionar el boton crear cuenta, nos mandara a otra interfaz en donde  ingr
 - contraseña 
 - confirmar,
 cuando estos apartados esten llenados, seleccionaremos el boton registrarse.
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/2.jpeg" width="375"/>
 
 ###### Olvide mi contraseña
 Para restablecer la contraseña de su cuenta, lo recomendable es seguir los pasos en este pedido, y si no tiene éxito, proporcionamos un codigo de verificaciòn para recuperar su cuenta a su correo.
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/11.jpeg" width="375"/>
+
 
 ##### Home
 2. Al ingresar con una cuenta a la app, lo primero que se puede ver, es la interfaz de inicio, donde se visualiza lo siguiente:
-###### Menù <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/1.png" width="25"/>
+###### Menù <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/1.png" width="20"/>
 
 En la parte superior encontramos una barra, en el cual tenemos el menù y se encuentran algunos indicadores:
 - Mi perfil
@@ -2222,35 +2252,33 @@ En la parte superior encontramos una barra, en el cual tenemos el menù y se enc
 - Agregar servicio
 - Servicios pendientes
 - Cerrar sesion 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/4.jpeg" width="375"/>
+
 
 ###### Servicios
 En el interfaz home podras buscar el tipo de servicio que el usuario requiera, tales como:
 - plomeria
 - electricidad
 - albañileria, etc...
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/5.jpeg" width="375"/>
+
 
 ##### Selección de servicios
 3. En la clase declarada como “Servicio”, podras identificar los diferentes perfiles del prestador de servicios, para lo cual, deberás seleccionar el perfil, posteriormente dar clic en "Elegir" y obtendrás información del prestador del servicio.
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/6.jpeg" width="375"/>
+
 
 ##### Perfil del prestador del servicio
 4. En la interfaz se podran encontrar los datos del prestador del servicio, tales como:
 - Datos personales
 - Curriculum vitae
 - Reseñas de sus servicios anteriores
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/8.jpeg" width="375"/>
+
 
 ###### Solicitar servicio
 5. En la interfaz para solicitar servicio, nos pedira llenar unos apartados de los datos personales del cliente, àdemas de una breve  descripciòn. Posteriormente tendremos que seleccionar la fecha de comienzo del trabajo; Una vez llenados los datos se enviara al prestador.  
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/10.jpeg" width="300"/>
+
 
 ##### Perfil de usuario
 6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
 Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicitò. De igual manera veremos los servicios finalizados.
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/7.jpeg" width="375"/>
-
 
 
 ## Integrantes
