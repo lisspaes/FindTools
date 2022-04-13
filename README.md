@@ -8,10 +8,14 @@ Esta aplicación está  basada en aplicaciones de servicio de viaje y aplicacion
 En la aplicación se podrá encontrar información de la persona a contratar para realizar el servicio que se solicite, las personas también podrán calificar y comentar la calidad de servicio que recibieron por parte de la persona que brindo el servicio.
 
 ## Tabla de contenido
-1. [Prototipo](#Prototipo)
-2. [Codigo](#Codigo)
-3. [Vista Previa](#Vista-previa)
+1. [Tecnologias a utilizar](#Tecnologias-a-utilizar)
+2. [Prototipo](#Prototipo)
+3. [Codigo](#Codigo)
+4. [Vista Previa](#Vista-previa)
+5. [Diseño de la base de datos](#Diseño-de-la-base-de-datos)
+6. [Manual de Usuario](#Manual-de-usuario)
 
+### Tecnologias a utilizar
 
 ### Prototipo
 ##### Login
@@ -2175,6 +2179,8 @@ List<Resenas> resenasLista = [
 
 
 ### Vista previa
+### Diseño de la base de datos
+### Manual de usuario
 #####  Login
 1. Para poder usar está app, el usuario debe de crear una cuenta. Si ya se tiene una cuenta, entonces, puede utilizarla ingresando su correo y contraseña.
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/login.jpg" width="375"/>
