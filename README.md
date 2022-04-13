@@ -22,7 +22,7 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 
 ##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="25"/>
 
-Trello es una aplicación basada en el método Kanban y sirve para gestionar tareas permitiendo organizar el trabajo en grupo de forma colaborativa mediante tableros virtuales compuestos de listas de tareas en forma de columnas. 
+Trello es una aplicación basada en el método Kanban y sirve para gestionar tareas permitiendo organizar el trabajo en grupo de forma colaborativa mediante tableros virtuales compuestos de listas de tareas en forma de columnas. El equipo de desarrollo de FindTools eligio trello gracias a su sencilla interfaz y simple manejo puede ser utilizado para llevar a cabo proyectos o tareas tanto profesionales como personales, de forma organizada, sencilla, ágil, flexible y potente.
 
 ##### GitHub <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T4.png" width="30"/>
 
