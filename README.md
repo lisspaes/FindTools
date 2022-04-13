@@ -16,11 +16,11 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 
 ### Tecnologias a utilizar
 
-##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="30"/>
+##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="20"/>
 
-##### Visual Code <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T2.png" width="30"/>
+##### Visual Code <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T2.png" width="25"/>
 
-##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="30"/>
+##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="25"/>
 
 Trello es una aplicación basada en el método Kanban y sirve para gestionar tareas permitiendo organizar el trabajo en grupo de forma colaborativa mediante tableros virtuales compuestos de listas de tareas en forma de columnas. 
 
