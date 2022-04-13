@@ -31,9 +31,30 @@ Trello es una aplicación basada en el método Kanban y sirve para gestionar tar
 
 ##### GitHub <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T4.png" width="30"/>
 
+Github es un repositorio online gratuito que permite gestionar proyectos y controlar versiones de código. Es muy utilizado por desarrolladores para almacenar sus trabajos dando así la oportunidad a millones de personas de todo el mundo a cooperar en ellos. GitHub es una excelente herramienta para el trabajo en equipo. Cuando se trata de software o de un sitio web que necesita crearse juntos, la plataforma en línea sin duda facilita la gestión de proyectos.
+
+
 ##### MySQL <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T5.png" width="30"/>
 
+MySQL es un sistema de gestión de bases de datos relacional permite almacenar y acceder a los datos a través de múltiples motores de almacenamiento. MySQL también es capaz de replicar datos y particionar tablas para mejorar el rendimiento y la durabilidad.
+
+Para el desarrollo de Find Tools se utiliza MySQL el cual permite que el desarrollo de aplicaciones sea más simple. Funciona con un modelo cliente-servidor. Cada vez que necesitan acceder a los datos, los clientes se conectan al servidor del sistema de gestión de base de datos y le solicitan la información que necesitan.
+
+La solvencia, versatilidad y consistencia de las bases de datos relacionales y de
+SQL, hacen de este lenguaje uno de los más importantes, útiles y demandados
+para analizar datos.
+
 ##### Microsoft Azure <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T6.png" width="30"/>
+
+Microsoft Azure es un servicio de computación en la nube creado por Microsoft para construir, probar, desplegar y administrar aplicaciones y servicios mediante el uso de sus centros de datos. Sirve para Crear el servidor back-end para cualquier aplicación móvil
+
+A continuación mostraremos algunos motivos por el cual se uso:
+- Sin costes iniciales
+- Sin tarifas de cancelación
+- Azure tiene más certificaciones que cualquier otro proveedor en la nube.
+- Servicios de seguridad y copias de seguridad.
+- Aplicaciones nativas y multiplataforma atractivas para iOS, Android,
+- Windows o Mac.
 
 
 ### Prototipo
