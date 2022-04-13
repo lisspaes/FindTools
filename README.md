@@ -18,7 +18,12 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 
 ##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="20"/>
 
+Flutter es un SDK de aplicaciones móviles para la creación de aplicaciones de alto rendimiento y alta fidelidad para iOS y Android, a partir de un único código base.
+El objetivo es permitir a los desarrolladores que lancen aplicaciones de alto rendimiento que se adapten de forma natural a diferentes plataformas. Abarcamos las diferencias en los comportamientos de scrolling, tipografía, iconos, y más.
+
 ##### Visual Code <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T2.png" width="25"/>
+
+Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código. Se decidio trabajar con Visual Studio Code porque es posible navegar entre varias carpetas de proyectos. Estos proyectos pueden estar escritos en cualquier lenguaje de programación, por lo que no supone ninguna restricción para Visual Studio Code.
 
 ##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="25"/>
 
