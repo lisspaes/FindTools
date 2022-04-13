@@ -16,19 +16,19 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 
 ### Tecnologias a utilizar
 
-##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="50"/>
+##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="30"/>
 
-##### Visual Code <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T2.png" width="50"/>
+##### Visual Code <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T2.png" width="30"/>
 
-##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="50"/>
+##### Trello <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T3.png" width="30"/>
 
 Trello es una aplicación basada en el método Kanban y sirve para gestionar tareas permitiendo organizar el trabajo en grupo de forma colaborativa mediante tableros virtuales compuestos de listas de tareas en forma de columnas. 
 
-##### GitHub <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T5.png" width="50"/>
+##### GitHub <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T4.png" width="30"/>
 
-##### MySQL <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T5.png" width="50"/>
+##### MySQL <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T5.png" width="30"/>
 
-##### Microsoft Azure <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T6.png" width="50"/>
+##### Microsoft Azure <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T6.png" width="30"/>
 
 
 ### Prototipo
