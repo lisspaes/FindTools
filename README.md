@@ -13,7 +13,7 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 4. [Vista Previa](#Vista-previa)
 5. [Diseño de la base de datos](#Diseño-de-la-base-de-datos)
 6. [Manual de Usuario](#Manual-de-usuario)
-7. [PWA](#PWA)
+7. [PWA](https://github.com/lisspaes/FindTools/blob/main/assets/PWA.md)
 
 
 ##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="20"/>
