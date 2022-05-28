@@ -9,15 +9,13 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 4. [Visitar sitio](https://findtools.netlify.app/)
 
 
-### Herramientas utilizadas
+### Tecnologias a utilizadas
 
 ##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Angular.png" width="50"/>
 
 ##### Boottstrap <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
 
 ##### Netlify <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/netlify.svg" width="50"/>
-
-### Vista Previa
 
 
 ### Demostracion 
@@ -27,11 +25,11 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 
 ### Vista Previa
 
-Parte 1
+Parte 1:
+
 Alcance comercial, compartiendo servicios y brindando al usuario una nueva experiencia.Ayuda a realizar un servicio más fácil y eficientemente en la comunicación 
 
-
-                       <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v2.PNG" width="500"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v2.PNG" width="500"/>
 
 
 
