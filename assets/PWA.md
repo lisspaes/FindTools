@@ -14,6 +14,12 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 ##### Boottstrap
 ##### Netlify
 
+### Vista Previa
+
+
 ### Demostracion 
+- Usa el buscador para solicitar un servicio o la realización de un trabajo y se la enviaremos a los mejores profesionales de la zona.
+- En la aplicacion recibirás diferentes propuestas para que evalúes las distintas opciones y puedas comparar antes de elegir
+- Si alguno te interesa, podrás escoger el perfil o el presupuesto que mejor se ajuste a tus necesidades, tú escoges con quién te pones en contacto y todo de forma gratuita y sin intermediarios.
 
 [Funcionamiento](https://youtu.be/iVf9VQnJAco)
