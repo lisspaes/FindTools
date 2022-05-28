@@ -2251,6 +2251,12 @@ List<Resenas> resenasLista = [
 ##### Vista dejar reseña
 
 ### Diseño de la base de datos
+En el siguiente diagrama se muestra el producto de la etapa conceptual en el
+diseño de base de datos:
+
+
+A continuación se muestra el producto de la etapa logica en el
+diseño de base de datos:
 
 ### Manual de usuario
 #####  Login
