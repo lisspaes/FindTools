@@ -1,4 +1,4 @@
-# PWA
+# PWA <img src="[https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png](https://user-images.githubusercontent.com/3104648/28351989-7f68389e-6c4b-11e7-9bf2-e9fcd4977e7a.png)" width="20"/>
 Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan sin conexión a internet ya que operan en la nube. Además, como si fueran apps nativas y eso haría que la PWA de FindTools ofrezca una experiencia veloz a los usuarios.
 
 ## Tabla de contenido
