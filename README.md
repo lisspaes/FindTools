@@ -13,9 +13,10 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 4. [Vista Previa](#Vista-previa)
 5. [Diseño de la base de datos](#Diseño-de-la-base-de-datos)
 6. [Manual de Usuario](#Manual-de-usuario)
-7. [PWA](#PWA)
-8. [Herramientas utilizadas](##Herramientas-utilizadas)
-9. [Funcionamineto](##Funcionamineto)
+   [TOC]
+8. PWA
+9. ##Herramientas utilizadas
+10. ##Demostracion 
 
 ### Tecnologias a utilizar
 
@@ -2317,10 +2318,24 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicitò. De igual manera veremos los servicios finalizados.
 
 # PWA
+Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan sin conexión a internet ya que operan en la nube. Además, como si fueran apps nativas y eso haría que la PWA de FindTools ofrezca una experiencia veloz a los usuarios.
+
 
 ### Herramientas utilizadas
 
-### Funcionamineto
+##### Angular
+
+
+
+##### Boottstrap
+##### Netlify
+
+
+
+
+### Demostracion 
+
+[Funcionamiento](https://youtu.be/iVf9VQnJAco)
 
 
 ## Integrantes
