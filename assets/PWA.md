@@ -11,13 +11,13 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 
 ### Tecnologias a utilizar
 
-##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Angular.png" width="50"/>
+##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Angular.png" width="40"/>
 Angular nos permite implementar el modelo Progressive Web Application (PWA) a nuestra aplicación y transformarla en una de ellas fácilmente. Angular es un framework de desarrollo para JavaScript creado por Google, la finalidad de Angular es facilitarnos el desarrollo de aplicaciones web, además, facilitarnos una serie de herramientas para trabajar con los elementos de una web de una manera más sencilla y óptima.
 
-##### Boottstrap <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
+##### Boottstrap <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="40"/>
 
-##### Netlify <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/netlify.svg" width="50"/>
-
+##### Netlify <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/netlify.svg" width="40"/>
+Netlify es una plataforma que nace para automatizar proyectos webs estáticos, permite crear, alojar y mantener tu sitio web o aplicación con implementación continua, HTTPS de 1 solo clic, entre otros. 
 
 ### Demostracion 
 - Usa el buscador para solicitar un servicio o la realización de un trabajo y se la enviaremos a los mejores profesionales de la zona.
