@@ -9,7 +9,7 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 4. [Visitar sitio](https://findtools.netlify.app/)
 
 
-### Tecnologias a utilizadas
+### Tecnologias a utilizar
 
 ##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Angular.png" width="50"/>
 
