@@ -30,7 +30,9 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 Parte 1
 Alcance comercial, compartiendo servicios y brindando al usuario una nueva experiencia.Ayuda a realizar un servicio más fácil y eficientemente en la comunicación 
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="80"/>
+
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="100"/>
+
 
 Parte 2
 Facilitar la búsqueda de quien ofrezca y solicite servicios a domicilio, donde sean fáciles de contratar y sobre todo que  tengan experiencia .
