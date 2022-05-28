@@ -13,6 +13,9 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 4. [Vista Previa](#Vista-previa)
 5. [Diseño de la base de datos](#Diseño-de-la-base-de-datos)
 6. [Manual de Usuario](#Manual-de-usuario)
+7. [PWA](#PWA)
+8. [Herramientas utilizadas](##Herramientas-utilizadas)
+9. [Funcionamineto](##Funcionamineto)
 
 ### Tecnologias a utilizar
 
@@ -2313,6 +2316,12 @@ En el interfaz home podras buscar el tipo de servicio que el usuario requiera, t
 6. En esta interfaz veremos informaciòn bàsica personal, acerca del usuario.
 Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proceso, que el usuario solicitò. De igual manera veremos los servicios finalizados.
 
+# PWA
+
+### Herramientas utilizadas
+
+### Funcionamineto
+
 
 ## Integrantes
 - Beltrán García Julio Edgar 
@@ -2320,6 +2329,8 @@ Ademàs nos mostrara informaciòn sobre los servicios que se encuentran en proce
 - Ochoa Tlatenchi Abigail  
 - Pacheco Espinosa Lissete 
 - Pérez Domínguez Maximiliano 
+
+
 
 
 
