@@ -16,6 +16,8 @@ FindTools se basó en el diseño de algunas aplicaciones de servicio de viajes y
 7. [PWA](https://github.com/lisspaes/FindTools/blob/main/assets/PWA.md)
 
 
+### Tecnologias a utilizar
+
 ##### Flutter <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/T1.png" width="20"/>
 
 Flutter es un SDK de aplicaciones móviles para la creación de aplicaciones de alto rendimiento y alta fidelidad para iOS y Android, a partir de un único código base.
