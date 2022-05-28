@@ -11,11 +11,11 @@ Una de las grandes ventajas de las aplicaciones web progresivas es que funcionan
 
 ### Herramientas utilizadas
 
-##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
+##### Angular <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/Angular.png" width="50"/>
 
 ##### Boottstrap <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
 
-##### Netlify <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
+##### Netlify <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/netlify.svg" width="50"/>
 
 ### Vista Previa
 
@@ -31,15 +31,17 @@ Parte 1
 Alcance comercial, compartiendo servicios y brindando al usuario una nueva experiencia.Ayuda a realizar un servicio más fácil y eficientemente en la comunicación 
 
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="100"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v2.PNG" width="100"/>
+
 
 
 Parte 2
 Facilitar la búsqueda de quien ofrezca y solicite servicios a domicilio, donde sean fáciles de contratar y sobre todo que  tengan experiencia .
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png](https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v1.PNG" width="50"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v1.PNG" width="100"/>
 
 Parte 3
 Implementar Trabajadores/empresas que realicen tareas domésticas
 
-<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/pwa.png" width="50"/>
+<img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v3.PNG" width="100"/>
+
