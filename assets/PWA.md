@@ -33,12 +33,14 @@ Alcance comercial, compartiendo servicios y brindando al usuario una nueva exper
 
 
 
-Parte 2
+Parte 2:
+
 Facilitar la búsqueda de quien ofrezca y solicite servicios a domicilio, donde sean fáciles de contratar y sobre todo que  tengan experiencia .
 
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v1.PNG" width="500"/>
 
-Parte 3
+Parte 3:
+
 Implementar Trabajadores/empresas que realicen tareas domésticas
 
 <img src="https://github.com/lisspaes/FindTools/blob/main/assets/images/prototipo/v3.PNG" width="500"/>
